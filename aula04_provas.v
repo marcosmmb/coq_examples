@@ -99,7 +99,7 @@ Qed.
 
 (** Outros exemplos de prova *)
 
-Theorem plus_1_l : forall n:nat, n + 1 = S n.
+Theorem plus_1_l : forall n:nat, 1 + n = S n.
 Proof.
   intros n. reflexivity.
 Qed.
@@ -147,7 +147,13 @@ Qed.
 Theorem plus_id_exercise : forall n m o : nat,
   n = m -> m = o -> n + m = m + o.
 Proof.
-  (* COMPLETE AQUI *) Admitted.
+  intros n m o.
+  intros H.
+  intros J.
+  rewrite -> H.
+  rewrite <- J.
+  reflexivity.
+Qed.
 
 (** Lembrando que o comando [Admitted] deve
     ser removido. Ele diz para aceitar,
