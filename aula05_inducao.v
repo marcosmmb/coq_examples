@@ -1,5 +1,6 @@
 (** * Indução em Coq *)
 
+Add LoadPath "E:\Users\mmmb\Desktop\coq".
 Require Export aula04_provas.
 
 (* ############################################### *)
@@ -17,7 +18,7 @@ Print plus_O_n.
 (** E se quisermos provar n + 0 = n? *)
 
 Theorem plus_n_O_firsttry : forall n:nat,
-  n = n + 0.
+  n = n + 0 .
 Proof.
   intros n.
   simpl. (* não simplifica nada *)
@@ -35,7 +36,7 @@ Theorem plus_n_O_secondtry : forall n:nat,
 Proof.
   intros n. destruct n as [| n'].
   - (* n = 0 *)
-    reflexivity. (* quando [n] é 0, funciona *)
+    simpl. reflexivity. (* quando [n] é 0, funciona *)
   - (* n = S n' *)
     simpl.       (* aqui [n] é [S n'],
                   outro número arbitrário *)
@@ -47,7 +48,7 @@ Abort.
 Theorem plus_n_O : forall n:nat, n = n + 0.
 Proof.
   intros n. induction n as [| n' IHn'].
-  - (* n = 0 *)    reflexivity.
+  - simpl. (* n = 0 *)    reflexivity.
   - (* n = S n' *) simpl. rewrite <- IHn'.
                    reflexivity.
 Qed.
@@ -74,22 +75,35 @@ Qed.
 Theorem mult_0_r : forall n:nat,
   n * 0 = 0.
 Proof.
-  (* COMPLETE AQUI *) Admitted.
+  intros n. induction n.
+  - simpl. reflexivity.
+  - simpl. rewrite -> IHn. reflexivity.
+Qed.
 
 Theorem plus_n_Sm : forall n m : nat,
   S (n + m) = n + (S m).
 Proof.
-  (* COMPLETE AQUI *) Admitted.
+  intros n m. induction n.
+  - simpl. reflexivity.
+  - simpl. rewrite -> IHn. reflexivity.
+Qed.
 
 Theorem plus_comm : forall n m : nat,
   n + m = m + n.
 Proof.
-  (* COMPLETE AQUI *) Admitted.
+  intros n m. induction n.
+  - simpl. rewrite <- plus_n_O. reflexivity.
+  - simpl. rewrite -> IHn. rewrite -> plus_n_Sm. reflexivity.
+Qed.
 
 Theorem plus_assoc : forall n m p : nat,
   n + (m + p) = (n + m) + p.
 Proof.
-  (* COMPLETE AQUI *) Admitted.
+  intros n m p. induction n.
+  - reflexivity.
+  - simpl. rewrite -> IHn. reflexivity.
+Qed.
+
 
 (* ############################################### *)
 (** * Provas aninhadas *)
@@ -104,7 +118,7 @@ Proof.
   intros n m.
   assert (H: 0 + n = n).
   {
-    reflexivity.
+    simpl. reflexivity.
   }
   rewrite -> H.
   reflexivity.
@@ -166,7 +180,11 @@ Qed.
 Theorem plus_swap : forall n m p : nat,
   n + (m + p) = m + (n + p).
 Proof.
-  (* COMPLETE AQUI *) Admitted.
+  intros n m p. rewrite plus_assoc. rewrite plus_assoc.
+  assert (H: n + m = m + n).
+  { rewrite plus_comm. reflexivity. }
+  rewrite H. reflexivity.
+Qed.
 
 (** Agora, prove comutatividade da multiplicação.
     Talvez seja necessário provar um teorema auxiliar.
@@ -175,7 +193,13 @@ Proof.
 Theorem mult_comm : forall m n : nat,
   m * n = n * m.
 Proof.
-  (* COMPLETE AQUI *) Admitted.
+  intros m n. induction m.
+  - simpl. rewrite <- mult_n_O. reflexivity.
+  - rewrite <- mult_n_Sm. simpl. rewrite plus_comm.
+  assert (H: m * n = n * m).
+  { rewrite IHm. reflexivity. }
+  rewrite IHm. reflexivity.
+Qed.
 
 (* ############################################### *)
 (** * Leitura sugerida *)
