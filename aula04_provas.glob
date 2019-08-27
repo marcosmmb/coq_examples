@@ -1,0 +1,304 @@
+DIGEST f20a44a929e9bd14c00173afc969d1f9
+Faula04_provas
+R893:906 aula03_gallina <> <> lib
+prf 2558:2565 <> plus_O_n
+R2580:2582 Coq.Init.Datatypes <> nat ind
+R2590:2592 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2586:2588 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R2589:2589 aula04_provas <> n var
+R2593:2593 aula04_provas <> n var
+prf 2831:2839 <> plus_O_n'
+R2854:2856 Coq.Init.Datatypes <> nat ind
+R2864:2866 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2860:2862 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R2863:2863 aula04_provas <> n var
+R2867:2867 aula04_provas <> n var
+prf 3338:3345 <> plus_1_l
+R3358:3360 Coq.Init.Datatypes <> nat ind
+R3368:3370 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3364:3366 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R3367:3367 aula04_provas <> n var
+R3371:3371 Coq.Init.Datatypes <> S constr
+R3373:3373 aula04_provas <> n var
+prf 3422:3429 <> mult_0_l
+R3442:3444 Coq.Init.Datatypes <> nat ind
+R3452:3454 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3448:3450 Coq.Init.Peano <> ::nat_scope:x_'*'_x not
+R3451:3451 aula04_provas <> n var
+prf 4131:4145 <> plus_id_example
+R4160:4162 Coq.Init.Datatypes <> nat ind
+R4172:4177 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4183:4185 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4179:4181 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R4178:4178 aula04_provas <> n var
+R4182:4182 aula04_provas <> n var
+R4187:4189 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R4186:4186 aula04_provas <> m var
+R4190:4190 aula04_provas <> m var
+R4168:4170 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4167:4167 aula04_provas <> n var
+R4171:4171 aula04_provas <> m var
+prf 4471:4486 <> plus_id_exercise
+R4505:4507 Coq.Init.Datatypes <> nat ind
+R4517:4520 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4526:4529 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4535:4537 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4531:4533 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R4530:4530 aula04_provas <> n var
+R4534:4534 aula04_provas <> m var
+R4539:4541 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R4538:4538 aula04_provas <> m var
+R4542:4542 aula04_provas <> o var
+R4522:4524 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4521:4521 aula04_provas <> m var
+R4525:4525 aula04_provas <> o var
+R4513:4515 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4512:4512 aula04_provas <> n var
+R4516:4516 aula04_provas <> m var
+prf 5212:5222 <> mult_0_plus
+R5239:5241 Coq.Init.Datatypes <> nat ind
+R5257:5259 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5246:5246 Coq.Init.Peano <> ::nat_scope:x_'*'_x not
+R5252:5255 Coq.Init.Peano <> ::nat_scope:x_'*'_x not
+R5248:5250 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R5251:5251 aula04_provas <> n var
+R5256:5256 aula04_provas <> m var
+R5261:5263 Coq.Init.Peano <> ::nat_scope:x_'*'_x not
+R5260:5260 aula04_provas <> n var
+R5264:5264 aula04_provas <> m var
+R5299:5301 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R5319:5326 aula04_provas <> plus_O_n thm
+R5319:5326 aula04_provas <> plus_O_n thm
+R5319:5326 aula04_provas <> plus_O_n thm
+prf 6062:6069 <> mult_S_1
+R6086:6088 Coq.Init.Datatypes <> nat ind
+R6100:6105 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6117:6119 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6107:6110 Coq.Init.Peano <> ::nat_scope:x_'*'_x not
+R6116:6116 Coq.Init.Peano <> ::nat_scope:x_'*'_x not
+R6106:6106 aula04_provas <> m var
+R6112:6114 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R6115:6115 aula04_provas <> n var
+R6121:6123 Coq.Init.Peano <> ::nat_scope:x_'*'_x not
+R6120:6120 aula04_provas <> m var
+R6124:6124 aula04_provas <> m var
+R6094:6096 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6093:6093 aula04_provas <> m var
+R6097:6097 Coq.Init.Datatypes <> S constr
+R6099:6099 aula04_provas <> n var
+prf 6408:6428 <> plus_1_neq_0_firsttry
+R6443:6445 Coq.Init.Datatypes <> nat ind
+R6467:6469 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6450:6456 aula03_gallina <> beq_nat def
+R6460:6462 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R6459:6459 aula04_provas <> n var
+R6470:6474 aula03_gallina <> false constr
+R6627:6633 aula03_gallina <> beq_nat def
+R6642:6660 aula03_gallina NatPlayground2 plus def
+R6834:6836 Coq.Init.Datatypes <> nat ind
+prf 7187:7198 <> plus_1_neq_0
+R7213:7215 Coq.Init.Datatypes <> nat ind
+R7237:7239 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R7220:7226 aula03_gallina <> beq_nat def
+R7230:7232 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R7229:7229 aula04_provas <> n var
+R7240:7244 aula03_gallina <> false constr
+R8069:8072 aula03_gallina <> negb def
+prf 8084:8098 <> negb_involutive
+R8113:8116 aula03_gallina <> bool ind
+R8134:8136 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R8121:8124 aula03_gallina <> negb def
+R8127:8130 aula03_gallina <> negb def
+R8132:8132 aula04_provas <> b var
+R8137:8137 aula04_provas <> b var
+R8335:8338 aula03_gallina <> andb def
+prf 8350:8365 <> andb_commutative
+R8391:8393 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R8383:8386 aula03_gallina <> andb def
+R8390:8390 aula04_provas <> c var
+R8388:8388 aula04_provas <> b var
+R8394:8397 aula03_gallina <> andb def
+R8401:8401 aula04_provas <> b var
+R8399:8399 aula04_provas <> c var
+prf 8641:8657 <> andb_commutative'
+R8683:8685 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R8675:8678 aula03_gallina <> andb def
+R8682:8682 aula04_provas <> c var
+R8680:8680 aula04_provas <> b var
+R8686:8689 aula03_gallina <> andb def
+R8693:8693 aula04_provas <> b var
+R8691:8691 aula04_provas <> c var
+prf 9013:9025 <> plus_1_neq_0'
+R9040:9042 Coq.Init.Datatypes <> nat ind
+R9064:9066 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R9047:9053 aula03_gallina <> beq_nat def
+R9057:9059 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R9056:9056 aula04_provas <> n var
+R9067:9071 aula03_gallina <> false constr
+prf 9220:9237 <> andb_commutative''
+R9263:9265 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R9255:9258 aula03_gallina <> andb def
+R9262:9262 aula04_provas <> c var
+R9260:9260 aula04_provas <> b var
+R9266:9269 aula03_gallina <> andb def
+R9273:9273 aula04_provas <> b var
+R9271:9271 aula04_provas <> c var
+prf 9477:9491 <> andb_true_elim2
+R9508:9511 aula03_gallina <> bool ind
+R9531:9534 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R9536:9538 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R9535:9535 aula04_provas <> c var
+R9539:9542 aula03_gallina <> true constr
+R9524:9526 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R9516:9519 aula03_gallina <> andb def
+R9523:9523 aula04_provas <> c var
+R9521:9521 aula04_provas <> b var
+R9527:9530 aula03_gallina <> true constr
+prf 9689:9704 <> zero_nbeq_plus_1
+R9719:9721 Coq.Init.Datatypes <> nat ind
+R9743:9745 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R9726:9732 aula03_gallina <> beq_nat def
+R9738:9740 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R9737:9737 aula04_provas <> n var
+R9746:9750 aula03_gallina <> false constr
+R10089:10107 aula03_gallina NatPlayground2 plus def
+def 10120:10124 <> plus'
+R10131:10133 Coq.Init.Datatypes <> nat ind
+R10141:10143 Coq.Init.Datatypes <> nat ind
+R10148:10150 Coq.Init.Datatypes <> nat ind
+R10163:10163 aula04_provas <> n var
+R10174:10174 Coq.Init.Datatypes <> O constr
+R10179:10179 aula04_provas <> m var
+R10185:10185 Coq.Init.Datatypes <> S constr
+R10193:10193 Coq.Init.Datatypes <> S constr
+R10196:10200 aula04_provas <> plus' def
+R10205:10205 aula04_provas <> m var
+def 10335:10335 <> f
+R10342:10344 Coq.Init.Datatypes <> nat ind
+R10349:10352 aula03_gallina <> bool ind
+R10365:10365 aula04_provas <> n var
+R10376:10376 Coq.Init.Datatypes <> O constr
+R10381:10384 aula03_gallina <> true constr
+R10390:10390 Coq.Init.Datatypes <> S constr
+R10404:10408 aula03_gallina <> evenb def
+R10411:10411 Coq.Init.Datatypes <> S constr
+R10436:10440 aula03_gallina <> false constr
+R10445:10445 aula04_provas <> f def
+R10450:10450 Coq.Init.Peano <> ::nat_scope:x_'-'_x not
+R10468:10471 aula03_gallina <> true constr
+R10477:10477 aula04_provas <> f def
+R10482:10482 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+def 10554:10559 <> f'_aux
+R10566:10568 Coq.Init.Datatypes <> nat ind
+R10573:10576 aula03_gallina <> bool ind
+R10589:10589 aula04_provas <> n var
+R10600:10600 Coq.Init.Datatypes <> O constr
+R10605:10608 aula03_gallina <> true constr
+R10614:10614 Coq.Init.Datatypes <> S constr
+R10622:10627 aula04_provas <> f'_aux def
+R10632:10632 Coq.Init.Peano <> ::nat_scope:x_'-'_x not
+def 10653:10654 <> f'
+R10661:10663 Coq.Init.Datatypes <> nat ind
+R10668:10671 aula03_gallina <> bool ind
+R10684:10684 aula04_provas <> n var
+R10695:10695 Coq.Init.Datatypes <> O constr
+R10700:10703 aula03_gallina <> true constr
+R10709:10709 Coq.Init.Datatypes <> S constr
+R10723:10727 aula03_gallina <> evenb def
+R10730:10730 Coq.Init.Datatypes <> S constr
+R10755:10759 aula03_gallina <> false constr
+R10764:10765 aula04_provas <> f' def
+R10770:10770 Coq.Init.Peano <> ::nat_scope:x_'-'_x not
+R10788:10791 aula03_gallina <> true constr
+R10796:10801 aula04_provas <> f'_aux def
+R10806:10806 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+def 10895:10897 <> f''
+R10904:10906 Coq.Init.Datatypes <> nat ind
+R10916:10918 Coq.Init.Datatypes <> nat ind
+R10923:10926 aula03_gallina <> bool ind
+R10942:10944 aula04_provas <> qtd var
+R10939:10939 aula04_provas <> n var
+R10955:10955 Coq.Init.Datatypes <> O constr
+R10963:10966 aula03_gallina <> true constr
+R10975:10975 Coq.Init.Datatypes <> O constr
+R10980:10984 aula03_gallina <> false constr
+R10990:10990 Coq.Init.Datatypes <> S constr
+R10996:10996 Coq.Init.Datatypes <> S constr
+R11012:11016 aula03_gallina <> evenb def
+R11019:11019 Coq.Init.Datatypes <> S constr
+R11052:11056 aula03_gallina <> false constr
+R11061:11063 aula04_provas <> f'' def
+R11068:11068 Coq.Init.Peano <> ::nat_scope:x_'-'_x not
+R11099:11102 aula03_gallina <> true constr
+R11108:11110 aula04_provas <> f'' def
+R11115:11115 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R11221:11222 aula04_provas <> f' def
+R11237:11239 aula04_provas <> f'' def
+R11256:11258 aula04_provas <> f'' def
+def 13039:13046 <> f'''_aux
+R13053:13055 Coq.Init.Datatypes <> nat ind
+R13060:13062 Coq.Init.Datatypes <> nat ind
+R13075:13075 aula04_provas <> n var
+R13101:13101 Coq.Init.Datatypes <> S constr
+R13116:13120 aula03_gallina <> evenb def
+R13122:13122 aula04_provas <> n var
+R13144:13148 aula03_gallina <> false constr
+R13155:13161 Coq.Init.Nat <> div def
+R13165:13165 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R13164:13164 aula04_provas <> n var
+R13187:13190 aula03_gallina <> true constr
+R13197:13197 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R13209:13212 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R13198:13204 Coq.Init.Nat <> div def
+R13206:13206 aula04_provas <> n var
+def 13251:13254 <> f'''
+R13261:13263 Coq.Init.Datatypes <> nat ind
+R13268:13271 aula03_gallina <> bool ind
+R13278:13280 aula04_provas <> f'' def
+R13285:13292 aula04_provas <> f'''_aux def
+R13294:13294 aula04_provas <> n var
+R13282:13282 aula04_provas <> n var
+def 13307:13316 <> f'''_test0
+R13326:13328 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R13320:13323 aula04_provas <> f''' def
+R13329:13332 aula03_gallina <> true constr
+def 13368:13377 <> f'''_test1
+R13387:13389 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R13381:13384 aula04_provas <> f''' def
+R13390:13393 aula03_gallina <> true constr
+def 13429:13438 <> f'''_test2
+R13448:13450 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R13442:13445 aula04_provas <> f''' def
+R13451:13454 aula03_gallina <> true constr
+def 13490:13499 <> f'''_test3
+R13509:13511 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R13503:13506 aula04_provas <> f''' def
+R13512:13515 aula03_gallina <> true constr
+def 13551:13560 <> f'''_test4
+R13570:13572 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R13564:13567 aula04_provas <> f''' def
+R13573:13576 aula03_gallina <> true constr
+def 13612:13621 <> f'''_test5
+R13631:13633 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R13625:13628 aula04_provas <> f''' def
+R13634:13637 aula03_gallina <> true constr
+def 13673:13682 <> f'''_test6
+R13692:13694 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R13686:13689 aula04_provas <> f''' def
+R13695:13698 aula03_gallina <> true constr
+def 13734:13743 <> f'''_test7
+R13753:13755 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R13747:13750 aula04_provas <> f''' def
+R13756:13759 aula03_gallina <> true constr
+def 13795:13804 <> f'''_test8
+R13814:13816 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R13808:13811 aula04_provas <> f''' def
+R13817:13820 aula03_gallina <> true constr
+def 13856:13865 <> f'''_test9
+R13875:13877 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R13869:13872 aula04_provas <> f''' def
+R13878:13881 aula03_gallina <> true constr
+def 13917:13927 <> f'''_test10
+R13938:13940 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R13931:13934 aula04_provas <> f''' def
+R13941:13944 aula03_gallina <> true constr

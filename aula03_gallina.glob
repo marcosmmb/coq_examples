@@ -1,0 +1,505 @@
+DIGEST 0d18fa0a893d2dc5bf556b93b53bf387
+Faula03_gallina
+ind 3042:3044 <> day
+constr 3060:3065 <> monday
+constr 3080:3086 <> tuesday
+constr 3100:3108 <> wednesday
+constr 3120:3127 <> thursday
+constr 3140:3145 <> friday
+constr 3160:3167 <> saturday
+constr 3180:3185 <> sunday
+R3072:3074 aula03_gallina <> day ind
+R3092:3094 aula03_gallina <> day ind
+R3112:3114 aula03_gallina <> day ind
+R3132:3134 aula03_gallina <> day ind
+R3152:3154 aula03_gallina <> day ind
+R3172:3174 aula03_gallina <> day ind
+R3192:3194 aula03_gallina <> day ind
+def 3577:3588 <> next_weekday
+R3593:3595 aula03_gallina <> day ind
+R3600:3602 aula03_gallina <> day ind
+R3615:3615 aula03_gallina <> d var
+R3626:3631 aula03_gallina <> monday constr
+R3639:3645 aula03_gallina <> tuesday constr
+R3651:3657 aula03_gallina <> tuesday constr
+R3664:3672 aula03_gallina <> wednesday constr
+R3678:3686 aula03_gallina <> wednesday constr
+R3691:3698 aula03_gallina <> thursday constr
+R3704:3711 aula03_gallina <> thursday constr
+R3717:3722 aula03_gallina <> friday constr
+R3728:3733 aula03_gallina <> friday constr
+R3741:3746 aula03_gallina <> monday constr
+R3752:3759 aula03_gallina <> saturday constr
+R3765:3770 aula03_gallina <> monday constr
+R3776:3781 aula03_gallina <> sunday constr
+R3789:3794 aula03_gallina <> monday constr
+R4165:4176 aula03_gallina <> next_weekday def
+R4178:4183 aula03_gallina <> friday constr
+R4220:4231 aula03_gallina <> next_weekday def
+R4234:4245 aula03_gallina <> next_weekday def
+R4247:4254 aula03_gallina <> saturday constr
+def 4293:4309 <> test_next_weekday
+R4314:4314 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4351:4354 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4315:4326 aula03_gallina <> next_weekday def
+R4329:4340 aula03_gallina <> next_weekday def
+R4342:4349 aula03_gallina <> saturday constr
+R4355:4361 aula03_gallina <> tuesday constr
+ind 4934:4938 <> sinal
+constr 4954:4958 <> verde
+constr 4972:4978 <> amarelo
+constr 4992:4999 <> vermelho
+R4962:4966 aula03_gallina <> sinal ind
+R4982:4986 aula03_gallina <> sinal ind
+R5003:5007 aula03_gallina <> sinal ind
+def 5022:5031 <> next_sinal
+R5036:5040 aula03_gallina <> sinal ind
+R5045:5049 aula03_gallina <> sinal ind
+R5062:5062 aula03_gallina <> s var
+R5073:5080 aula03_gallina <> vermelho constr
+R5085:5091 aula03_gallina <> amarelo constr
+R5097:5103 aula03_gallina <> amarelo constr
+R5108:5112 aula03_gallina <> verde constr
+R5118:5122 aula03_gallina <> verde constr
+R5127:5134 aula03_gallina <> vermelho constr
+R5153:5162 aula03_gallina <> next_sinal def
+R5164:5171 aula03_gallina <> vermelho constr
+def 5184:5193 <> test_sinal
+R5198:5198 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5231:5234 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5199:5208 aula03_gallina <> next_sinal def
+R5211:5220 aula03_gallina <> next_sinal def
+R5222:5229 aula03_gallina <> vermelho constr
+R5235:5239 aula03_gallina <> verde constr
+ind 5477:5480 <> bool
+constr 5496:5499 <> true
+constr 5512:5516 <> false
+R5503:5506 aula03_gallina <> bool ind
+R5520:5523 aula03_gallina <> bool ind
+def 5631:5634 <> negb
+R5639:5642 aula03_gallina <> bool ind
+R5647:5650 aula03_gallina <> bool ind
+R5663:5663 aula03_gallina <> b var
+R5674:5677 aula03_gallina <> true constr
+R5682:5686 aula03_gallina <> false constr
+R5692:5696 aula03_gallina <> false constr
+R5701:5704 aula03_gallina <> true constr
+def 5725:5728 <> andb
+R5734:5737 aula03_gallina <> bool ind
+R5744:5747 aula03_gallina <> bool ind
+R5752:5755 aula03_gallina <> bool ind
+R5768:5769 aula03_gallina <> b1 var
+R5780:5783 aula03_gallina <> true constr
+R5788:5789 aula03_gallina <> b2 var
+R5795:5799 aula03_gallina <> false constr
+R5804:5808 aula03_gallina <> false constr
+def 5829:5831 <> orb
+R5837:5840 aula03_gallina <> bool ind
+R5847:5850 aula03_gallina <> bool ind
+R5855:5858 aula03_gallina <> bool ind
+R5871:5872 aula03_gallina <> b1 var
+R5883:5886 aula03_gallina <> true constr
+R5891:5894 aula03_gallina <> true constr
+R5900:5904 aula03_gallina <> false constr
+R5909:5910 aula03_gallina <> b2 var
+def 5953:5961 <> test_orb1
+R5965:5965 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5981:5984 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5966:5968 aula03_gallina <> orb def
+R5976:5980 aula03_gallina <> false constr
+R5970:5973 aula03_gallina <> true constr
+R5985:5988 aula03_gallina <> true constr
+def 6033:6041 <> test_orb2
+R6045:6045 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6061:6064 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6046:6048 aula03_gallina <> orb def
+R6056:6060 aula03_gallina <> false constr
+R6050:6054 aula03_gallina <> false constr
+R6065:6069 aula03_gallina <> false constr
+def 6114:6122 <> test_orb3
+R6126:6126 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6141:6145 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6127:6129 aula03_gallina <> orb def
+R6137:6140 aula03_gallina <> true constr
+R6131:6135 aula03_gallina <> false constr
+R6146:6149 aula03_gallina <> true constr
+def 6194:6202 <> test_orb4
+R6206:6206 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6221:6225 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6207:6209 aula03_gallina <> orb def
+R6217:6220 aula03_gallina <> true constr
+R6211:6214 aula03_gallina <> true constr
+R6226:6229 aula03_gallina <> true constr
+R6365:6368 aula03_gallina <> andb def
+not 6352:6352 <> :::x_'&&'_x
+R6398:6400 aula03_gallina <> orb def
+not 6385:6385 <> :::x_'||'_x
+def 6417:6425 <> test_orb5
+R6451:6453 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6443:6446 aula03_gallina <> :::x_'||'_x not
+R6434:6437 aula03_gallina <> :::x_'||'_x not
+R6429:6433 aula03_gallina <> false constr
+R6438:6442 aula03_gallina <> false constr
+R6447:6450 aula03_gallina <> true constr
+R6454:6457 aula03_gallina <> true constr
+def 6634:6638 <> nandb
+R6644:6647 aula03_gallina <> bool ind
+R6654:6657 aula03_gallina <> bool ind
+R6662:6665 aula03_gallina <> bool ind
+R6682:6683 aula03_gallina <> b2 var
+R6678:6679 aula03_gallina <> b1 var
+R6694:6697 aula03_gallina <> true constr
+R6700:6703 aula03_gallina <> true constr
+R6708:6712 aula03_gallina <> false constr
+R6726:6729 aula03_gallina <> true constr
+def 6748:6758 <> test_nandb1
+R6761:6761 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6778:6781 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6762:6766 aula03_gallina <> nandb def
+R6773:6777 aula03_gallina <> false constr
+R6768:6771 aula03_gallina <> true constr
+R6782:6785 aula03_gallina <> true constr
+def 6830:6840 <> test_nandb2
+R6843:6843 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6861:6864 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6844:6848 aula03_gallina <> nandb def
+R6856:6860 aula03_gallina <> false constr
+R6850:6854 aula03_gallina <> false constr
+R6865:6868 aula03_gallina <> true constr
+def 6913:6923 <> test_nandb3
+R6926:6926 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6943:6946 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6927:6931 aula03_gallina <> nandb def
+R6939:6942 aula03_gallina <> true constr
+R6933:6937 aula03_gallina <> false constr
+R6947:6950 aula03_gallina <> true constr
+def 6995:7005 <> test_nandb4
+R7008:7008 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R7024:7027 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R7009:7013 aula03_gallina <> nandb def
+R7020:7023 aula03_gallina <> true constr
+R7015:7018 aula03_gallina <> true constr
+R7028:7032 aula03_gallina <> false constr
+def 7172:7177 <> nandb'
+R7183:7186 aula03_gallina <> bool ind
+R7193:7196 aula03_gallina <> bool ind
+R7201:7204 aula03_gallina <> bool ind
+def 7442:7453 <> test_nandb'1
+R7456:7456 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R7474:7477 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R7457:7462 aula03_gallina <> nandb' prfax
+R7469:7473 aula03_gallina <> false constr
+R7464:7467 aula03_gallina <> true constr
+R7478:7481 aula03_gallina <> true constr
+def 7522:7533 <> test_nandb'2
+R7536:7536 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R7555:7558 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R7537:7542 aula03_gallina <> nandb' prfax
+R7550:7554 aula03_gallina <> false constr
+R7544:7548 aula03_gallina <> false constr
+R7559:7562 aula03_gallina <> true constr
+def 7603:7614 <> test_nandb'3
+R7617:7617 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R7635:7638 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R7618:7623 aula03_gallina <> nandb' prfax
+R7631:7634 aula03_gallina <> true constr
+R7625:7629 aula03_gallina <> false constr
+R7639:7642 aula03_gallina <> true constr
+def 7683:7694 <> test_nandb'4
+R7697:7697 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R7714:7717 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R7698:7703 aula03_gallina <> nandb' prfax
+R7710:7713 aula03_gallina <> true constr
+R7705:7708 aula03_gallina <> true constr
+R7718:7722 aula03_gallina <> false constr
+def 7942:7946 <> andb3
+R7952:7955 aula03_gallina <> bool ind
+R7962:7965 aula03_gallina <> bool ind
+R7972:7975 aula03_gallina <> bool ind
+R7980:7983 aula03_gallina <> bool ind
+def 8052:8062 <> test_andb31
+R8065:8065 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R8086:8089 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R8066:8070 aula03_gallina <> andb3 prfax
+R8082:8085 aula03_gallina <> true constr
+R8077:8080 aula03_gallina <> true constr
+R8072:8075 aula03_gallina <> true constr
+R8090:8093 aula03_gallina <> true constr
+def 8134:8144 <> test_andb32
+R8147:8147 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R8169:8172 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R8148:8152 aula03_gallina <> andb3 prfax
+R8165:8168 aula03_gallina <> true constr
+R8160:8163 aula03_gallina <> true constr
+R8154:8158 aula03_gallina <> false constr
+R8173:8177 aula03_gallina <> false constr
+def 8218:8228 <> test_andb33
+R8231:8231 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R8253:8256 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R8232:8236 aula03_gallina <> andb3 prfax
+R8249:8252 aula03_gallina <> true constr
+R8243:8247 aula03_gallina <> false constr
+R8238:8241 aula03_gallina <> true constr
+R8257:8261 aula03_gallina <> false constr
+def 8302:8312 <> test_andb34
+R8315:8315 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R8337:8340 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R8316:8320 aula03_gallina <> andb3 prfax
+R8332:8336 aula03_gallina <> false constr
+R8327:8330 aula03_gallina <> true constr
+R8322:8325 aula03_gallina <> true constr
+R8341:8345 aula03_gallina <> false constr
+R8565:8568 aula03_gallina <> true constr
+R8601:8604 aula03_gallina <> negb def
+R8606:8609 aula03_gallina <> true constr
+R8803:8806 aula03_gallina <> negb def
+R8920:8923 aula03_gallina <> andb def
+ind 9250:9252 <> rgb
+constr 9268:9270 <> red
+constr 9284:9288 <> green
+constr 9300:9303 <> blue
+R9276:9278 aula03_gallina <> rgb ind
+R9292:9294 aula03_gallina <> rgb ind
+R9308:9310 aula03_gallina <> rgb ind
+ind 9430:9434 <> color
+constr 9450:9454 <> black
+constr 9472:9476 <> white
+constr 9494:9500 <> primary
+R9462:9466 aula03_gallina <> color ind
+R9484:9488 aula03_gallina <> color ind
+R9509:9512 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R9513:9517 aula03_gallina <> color ind
+R9506:9508 aula03_gallina <> rgb ind
+R9527:9531 aula03_gallina <> black constr
+R9541:9547 aula03_gallina <> primary constr
+def 9613:9622 <> monochrome
+R9629:9633 aula03_gallina <> color ind
+R9638:9641 aula03_gallina <> bool ind
+R9654:9654 aula03_gallina <> c var
+R9665:9669 aula03_gallina <> black constr
+R9678:9681 aula03_gallina <> true constr
+R9687:9691 aula03_gallina <> white constr
+R9700:9703 aula03_gallina <> true constr
+R9709:9715 aula03_gallina <> primary constr
+R9722:9726 aula03_gallina <> false constr
+def 9747:9751 <> isred
+R9758:9762 aula03_gallina <> color ind
+R9767:9770 aula03_gallina <> bool ind
+R9783:9783 aula03_gallina <> c var
+R9794:9798 aula03_gallina <> black constr
+R9809:9813 aula03_gallina <> false constr
+R9819:9823 aula03_gallina <> white constr
+R9834:9838 aula03_gallina <> false constr
+R9844:9850 aula03_gallina <> primary constr
+R9852:9854 aula03_gallina <> red constr
+R9859:9862 aula03_gallina <> true constr
+R9868:9874 aula03_gallina <> primary constr
+R9883:9887 aula03_gallina <> false constr
+mod 10143:10155 <> NatPlayground
+ind 10455:10457 NatPlayground nat
+constr 10473:10473 NatPlayground O
+constr 10485:10485 NatPlayground S
+R10477:10479 aula03_gallina <> nat ind
+R10492:10495 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10496:10498 aula03_gallina <> nat ind
+R10489:10491 aula03_gallina <> nat ind
+ind 10832:10835 NatPlayground nat'
+constr 10851:10854 NatPlayground stop
+constr 10867:10870 NatPlayground tick
+R10858:10861 aula03_gallina <> nat' ind
+R10878:10881 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10882:10885 aula03_gallina <> nat' ind
+R10874:10877 aula03_gallina <> nat' ind
+def 10933:10936 NatPlayground pred
+R10943:10945 aula03_gallina NatPlayground nat ind
+R10950:10952 aula03_gallina NatPlayground nat ind
+R10965:10965 aula03_gallina <> n var
+R10976:10976 aula03_gallina NatPlayground O constr
+R10985:10985 aula03_gallina NatPlayground O constr
+R10991:10991 aula03_gallina NatPlayground S constr
+R11015:11027 aula03_gallina NatPlayground <> mod
+R11117:11117 Coq.Init.Datatypes <> S constr
+R11120:11120 Coq.Init.Datatypes <> S constr
+R11123:11123 Coq.Init.Datatypes <> S constr
+R11126:11126 Coq.Init.Datatypes <> S constr
+R11128:11128 Coq.Init.Datatypes <> O constr
+def 11243:11250 <> minustwo
+R11257:11259 Coq.Init.Datatypes <> nat ind
+R11264:11266 Coq.Init.Datatypes <> nat ind
+R11279:11279 aula03_gallina <> n var
+R11290:11290 Coq.Init.Datatypes <> O constr
+R11295:11295 Coq.Init.Datatypes <> O constr
+R11301:11301 Coq.Init.Datatypes <> S constr
+R11303:11303 Coq.Init.Datatypes <> O constr
+R11308:11308 Coq.Init.Datatypes <> O constr
+R11314:11314 Coq.Init.Datatypes <> S constr
+R11317:11317 Coq.Init.Datatypes <> S constr
+R11346:11353 aula03_gallina <> minustwo def
+R11388:11395 aula03_gallina <> minustwo def
+R11489:11489 Coq.Init.Datatypes <> S constr
+R11498:11501 Coq.Init.Peano <> pred syndef
+R11510:11517 aula03_gallina <> minustwo def
+def 11708:11712 <> evenb
+R11717:11719 Coq.Init.Datatypes <> nat ind
+R11724:11727 aula03_gallina <> bool ind
+R11740:11740 aula03_gallina <> n var
+R11751:11751 Coq.Init.Datatypes <> O constr
+R11763:11766 aula03_gallina <> true constr
+R11772:11772 Coq.Init.Datatypes <> S constr
+R11774:11774 Coq.Init.Datatypes <> O constr
+R11784:11788 aula03_gallina <> false constr
+R11794:11794 Coq.Init.Datatypes <> S constr
+R11797:11797 Coq.Init.Datatypes <> S constr
+R11806:11810 aula03_gallina <> evenb def
+def 11892:11895 <> oddb
+R11900:11902 Coq.Init.Datatypes <> nat ind
+R11907:11910 aula03_gallina <> bool ind
+R11915:11918 aula03_gallina <> negb def
+R11921:11925 aula03_gallina <> evenb def
+R11927:11927 aula03_gallina <> n var
+def 11940:11949 <> test_oddb1
+R11961:11963 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R11955:11958 aula03_gallina <> oddb def
+R11964:11967 aula03_gallina <> true constr
+R11984:11987 aula03_gallina <> oddb def
+def 12024:12033 <> test_oddb2
+R12045:12047 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R12039:12042 aula03_gallina <> oddb def
+R12048:12052 aula03_gallina <> false constr
+mod 12163:12176 <> NatPlayground2
+def 12189:12192 NatPlayground2 plus
+R12199:12201 Coq.Init.Datatypes <> nat ind
+R12209:12211 Coq.Init.Datatypes <> nat ind
+R12216:12218 Coq.Init.Datatypes <> nat ind
+R12231:12231 aula03_gallina <> n var
+R12242:12242 Coq.Init.Datatypes <> O constr
+R12247:12247 aula03_gallina <> m var
+R12253:12253 Coq.Init.Datatypes <> S constr
+R12261:12261 Coq.Init.Datatypes <> S constr
+R12264:12267 aula03_gallina <> plus def
+R12272:12272 aula03_gallina <> m var
+R12322:12325 aula03_gallina NatPlayground2 plus def
+def 12803:12806 NatPlayground2 mult
+R12815:12817 Coq.Init.Datatypes <> nat ind
+R12822:12824 Coq.Init.Datatypes <> nat ind
+R12837:12837 aula03_gallina <> n var
+R12848:12848 Coq.Init.Datatypes <> O constr
+R12853:12853 Coq.Init.Datatypes <> O constr
+R12859:12859 Coq.Init.Datatypes <> S constr
+R12867:12870 aula03_gallina NatPlayground2 plus def
+R12875:12878 aula03_gallina <> mult def
+R12883:12883 aula03_gallina <> m var
+R12872:12872 aula03_gallina <> m var
+def 12902:12911 NatPlayground2 test_mult1
+R12914:12914 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R12923:12926 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R12915:12918 aula03_gallina NatPlayground2 mult def
+def 13012:13016 NatPlayground2 minus
+R13023:13025 Coq.Init.Datatypes <> nat ind
+R13030:13032 Coq.Init.Datatypes <> nat ind
+R13048:13048 aula03_gallina <> m var
+R13045:13045 aula03_gallina <> n var
+R13059:13059 Coq.Init.Datatypes <> O constr
+R13073:13073 Coq.Init.Datatypes <> O constr
+R13079:13079 Coq.Init.Datatypes <> S constr
+R13085:13085 Coq.Init.Datatypes <> O constr
+R13093:13093 aula03_gallina <> n var
+R13099:13099 Coq.Init.Datatypes <> S constr
+R13105:13105 Coq.Init.Datatypes <> S constr
+R13113:13117 aula03_gallina <> minus def
+R13137:13150 aula03_gallina NatPlayground2 <> mod
+def 13204:13206 <> exp
+R13222:13224 Coq.Init.Datatypes <> nat ind
+R13229:13231 Coq.Init.Datatypes <> nat ind
+R13244:13248 aula03_gallina <> power var
+R13259:13259 Coq.Init.Datatypes <> O constr
+R13266:13266 Coq.Init.Datatypes <> S constr
+R13268:13268 Coq.Init.Datatypes <> O constr
+R13274:13274 Coq.Init.Datatypes <> S constr
+R13281:13284 Coq.Init.Peano <> mult syndef
+R13292:13294 aula03_gallina <> exp def
+R13296:13299 aula03_gallina <> base var
+R13286:13289 aula03_gallina <> base var
+def 13501:13509 <> factorial
+R13514:13516 Coq.Init.Datatypes <> nat ind
+R13521:13523 Coq.Init.Datatypes <> nat ind
+def 13592:13606 <> test_factorial1
+R13609:13609 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R13621:13624 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R13610:13618 aula03_gallina <> factorial prfax
+def 13667:13681 <> test_factorial2
+R13684:13684 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R13696:13700 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R13711:13711 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R13685:13693 aula03_gallina <> factorial prfax
+R13701:13704 Coq.Init.Peano <> mult syndef
+R14054:14057 Coq.Init.Peano <> plus syndef
+not 14042:14042 <> ::nat_scope:x_'+'_x
+R14179:14183 Coq.Init.Peano <> minus syndef
+not 14167:14167 <> ::nat_scope:x_'-'_x
+R14305:14308 Coq.Init.Peano <> mult syndef
+not 14293:14293 <> ::nat_scope:x_'*'_x
+R14416:14416 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R14422:14425 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R14418:14420 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+def 14498:14504 <> beq_nat
+R14513:14515 Coq.Init.Datatypes <> nat ind
+R14520:14523 aula03_gallina <> bool ind
+R14536:14536 aula03_gallina <> n var
+R14547:14547 Coq.Init.Datatypes <> O constr
+R14558:14558 aula03_gallina <> m var
+R14576:14576 Coq.Init.Datatypes <> O constr
+R14581:14584 aula03_gallina <> true constr
+R14597:14597 Coq.Init.Datatypes <> S constr
+R14605:14609 aula03_gallina <> false constr
+R14628:14628 Coq.Init.Datatypes <> S constr
+R14642:14642 aula03_gallina <> m var
+R14663:14663 Coq.Init.Datatypes <> O constr
+R14668:14672 aula03_gallina <> false constr
+R14688:14688 Coq.Init.Datatypes <> S constr
+R14696:14702 aula03_gallina <> beq_nat def
+def 14783:14785 <> leb
+R14794:14796 Coq.Init.Datatypes <> nat ind
+R14801:14804 aula03_gallina <> bool ind
+R14817:14817 aula03_gallina <> n var
+R14828:14828 Coq.Init.Datatypes <> O constr
+R14833:14836 aula03_gallina <> true constr
+R14842:14842 Coq.Init.Datatypes <> S constr
+R14862:14862 aula03_gallina <> m var
+R14877:14877 Coq.Init.Datatypes <> O constr
+R14882:14886 aula03_gallina <> false constr
+R14896:14896 Coq.Init.Datatypes <> S constr
+R14904:14906 aula03_gallina <> leb def
+def 14940:14948 <> test_leb1
+R14951:14951 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R14959:14962 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R14952:14954 aula03_gallina <> leb def
+R14963:14966 aula03_gallina <> true constr
+def 15011:15019 <> test_leb2
+R15022:15022 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R15030:15033 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R15023:15025 aula03_gallina <> leb def
+R15034:15037 aula03_gallina <> true constr
+def 15082:15090 <> test_leb3
+R15093:15093 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R15101:15104 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R15094:15096 aula03_gallina <> leb def
+R15105:15109 aula03_gallina <> false constr
+def 15391:15397 <> blt_nat
+R15406:15408 Coq.Init.Datatypes <> nat ind
+R15413:15416 aula03_gallina <> bool ind
+def 15485:15497 <> test_blt_nat1
+R15500:15500 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R15512:15515 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R15501:15507 aula03_gallina <> blt_nat prfax
+R15516:15520 aula03_gallina <> false constr
+def 15562:15574 <> test_blt_nat2
+R15577:15577 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R15589:15592 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R15578:15584 aula03_gallina <> blt_nat prfax
+R15593:15596 aula03_gallina <> true constr
+def 15638:15650 <> test_blt_nat3
+R15653:15653 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R15665:15668 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R15654:15660 aula03_gallina <> blt_nat prfax
+R15669:15673 aula03_gallina <> false constr
