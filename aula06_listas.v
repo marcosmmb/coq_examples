@@ -394,7 +394,7 @@ Theorem app_length : forall l1 l2 : natlist,
   length (l1 ++ l2) = (length l1) + (length l2).
 Proof.
   intros l1 l2. induction l1 as [| n l1' IHl1'].
-  - (* l1 = nil *)
+  - simpl. (* l1 = nil *)
     reflexivity.
   - (* l1 = cons *)
     simpl. rewrite -> IHl1'. reflexivity.
@@ -406,7 +406,7 @@ Theorem rev_length : forall l : natlist,
   length (rev l) = length l.
 Proof.
   intros l. induction l as [| n l' IHl'].
-  - (* l = nil *)
+  - simpl. (* l = nil *)
     reflexivity.
   - (* l = cons *)
     (* Observe o rewrite  com duas táticas *)
@@ -420,7 +420,10 @@ Qed.
 Theorem app_nil_r : forall l : natlist,
   l ++ [] = l.
 Proof.
-(* COMPLETE AQUI *) Admitted.
+  intros. induction l.
+  - simpl. reflexivity.
+  - simpl. rewrite IHl. reflexivity.
+Qed.
 
 Theorem rev_app_distr: forall l1 l2 : natlist,
   rev (l1 ++ l2) = rev l2 ++ rev l1.
@@ -435,15 +438,30 @@ Proof.
 Lemma nonzeros_app : forall l1 l2 : natlist,
   nonzeros (l1 ++ l2) = (nonzeros l1) ++ (nonzeros l2).
 Proof.
-(* COMPLETE AQUI *) Admitted.
+  intros. induction l1.
+  - simpl. reflexivity.
+  - destruct n.
+    + simpl. rewrite IHl1. reflexivity.
+    + simpl. rewrite IHl1. reflexivity.
+Qed.
 
 (** **** Exercise: (beq_natlist)  *)
 (** Complete a definição de [beq_natlist], que
     compara listas de números. Veja os exemplos.
     Em seguida, prove o teorema [beq_natlist_refl]. *)
 
-Fixpoint beq_natlist (l1 l2 : natlist) : bool
-(* SUBSTITUA COM ":= _sua_definição_ ." *). Admitted.
+Fixpoint beq_natlist (l1 l2 : natlist) : bool :=
+  match l1, l1 with
+  | [], [] => true
+  | _, [] => false
+  | [], _ => false
+  | h1 :: t1, h2 :: t2 => 
+    match beq_nat h1 h2 with
+    | true => beq_natlist t1 t2
+    | false => false
+    end
+  end.
+
 
 Example test_beq_natlist1 :
   (beq_natlist nil nil = true).
@@ -460,7 +478,9 @@ Example test_beq_natlist3 :
 Theorem beq_natlist_refl : forall l:natlist,
   true = beq_natlist l l.
 Proof.
-(* COMPLETE AQUI *) Admitted.
+  intros. induction l.
+  - simpl. reflexivity.
+Abort.
 
 (* ############################################### *)
 (** * Options *)
@@ -501,13 +521,13 @@ Fixpoint nth_error (l:natlist) (n:nat) : natoption :=
 
 Example test_nth_error1 :
   nth_error [4;5;6;7] 0 = Some 4.
-Proof. reflexivity. Qed.
+Proof. simpl. reflexivity. Qed.
 Example test_nth_error2 :
   nth_error [4;5;6;7] 3 = Some 7.
-Proof. reflexivity. Qed.
+Proof. simpl. reflexivity. Qed.
 Example test_nth_error3 :
   nth_error [4;5;6;7] 9 = None.
-Proof. reflexivity. Qed.
+Proof. simpl. reflexivity. Qed.
 
 (** A seguir, uma outra possibilidade de
     implementação de [nth_error] usando "if". *)
@@ -517,7 +537,7 @@ Fixpoint nth_error' (l:natlist) (n:nat) : natoption :=
   | nil => None
   | a :: l' => if beq_nat n O then Some a
                else nth_error' l' (pred n)
-  end.
+  end. 
 
 (** No entanto, cuidado com o "if". *)
 
@@ -550,17 +570,21 @@ Definition option_elim (d : nat) (o : natoption) : nat :=
 (** Use a ideia do "option" e atualize
     a definição da função [hd]. *)
 
-Definition hd_error (l : natlist) : natoption
-(* SUBSTITUA COM ":= _sua_definição_ ." *). Admitted.
+Definition hd_error (l : natlist) : natoption :=
+  match l with
+  | nil => None
+  | h :: t => Some h
+  end.
+
 
 Example test_hd_error1 : hd_error [] = None.
-(* COMPLETE AQUI *) Admitted.
+Proof. simpl. reflexivity. Qed.
 
 Example test_hd_error2 : hd_error [1] = Some 1.
-(* COMPLETE AQUI *) Admitted.
+Proof. simpl. reflexivity. Qed.
 
 Example test_hd_error3 : hd_error [5;6] = Some 5.
-(* COMPLETE AQUI *) Admitted.
+Proof. simpl. reflexivity. Qed.
 
 (** **** Exercise: (option_elim_hd)  *)
 (** Prove o seguinte teorema relacionando
@@ -569,7 +593,11 @@ Example test_hd_error3 : hd_error [5;6] = Some 5.
 Theorem option_elim_hd : forall (l:natlist) (default:nat),
   hd default l = option_elim default (hd_error l).
 Proof.
-(* COMPLETE AQUI *) Admitted.
+  Print hd. Print option_elim.
+  intros. destruct l.
+  - simpl. reflexivity.
+  - simpl. reflexivity.
+Qed.
 
 End NatList.
 
@@ -594,7 +622,10 @@ Definition beq_id (x1 x2 : id) :=
 Theorem beq_id_refl :
   forall x, true = beq_id x x.
 Proof.
-(* COMPLETE AQUI *) Admitted.
+  intros. destruct x. simpl. induction n.
+  - simpl. reflexivity.
+  - simpl. rewrite <- IHn. reflexivity.
+Qed.
 
 (** Agora, o tipo de mapeamentos parciais *)
 
