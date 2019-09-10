@@ -1,4 +1,4 @@
-DIGEST 0c1f9b3500ee84c0d3d2e7fad9c7528b
+DIGEST d07a01543e55fb6b43f849ae9a635c6f
 Faula06_listas
 R84:97 aula05_inducao <> <> lib
 mod 107:113 <> NatList
@@ -266,8 +266,660 @@ R3993:3993 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
 def 4207:4214 NatList nonzeros
 R4219:4225 aula06_listas NatList natlist ind
 R4230:4236 aula06_listas NatList natlist ind
-R4246:4246 aula06_listas <> l var
-R4257:4259 aula06_listas NatList nil constr
-R4264:4266 aula06_listas NatList nil constr
-R4273:4276 aula06_listas NatList :::x_'::'_x not
-R4307:4307 Coq.Init.Datatypes <> O constr
+R4249:4249 aula06_listas <> l var
+R4260:4262 aula06_listas NatList nil constr
+R4267:4269 aula06_listas NatList nil constr
+R4276:4279 aula06_listas NatList :::x_'::'_x not
+R4310:4310 Coq.Init.Datatypes <> O constr
+R4315:4322 aula06_listas <> nonzeros def
+R4339:4343 aula06_listas NatList :::x_'::'_x not
+R4354:4354 aula06_listas NatList :::x_'::'_x not
+R4344:4351 aula06_listas <> nonzeros def
+def 4381:4393 NatList test_nonzeros
+R4422:4424 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4398:4405 aula06_listas NatList nonzeros def
+R4407:4407 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R4409:4409 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R4411:4411 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R4413:4413 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R4415:4415 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R4417:4417 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R4419:4419 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R4421:4421 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R4425:4425 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R4427:4427 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R4429:4429 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R4431:4431 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+def 4476:4485 NatList oddmembers
+R4490:4496 aula06_listas NatList natlist ind
+R4501:4507 aula06_listas NatList natlist ind
+R4520:4520 aula06_listas <> l var
+R4531:4533 aula06_listas NatList nil constr
+R4538:4540 aula06_listas NatList nil constr
+R4547:4550 aula06_listas NatList :::x_'::'_x not
+R4567:4570 aula03_gallina <> oddb def
+R4585:4588 aula03_gallina <> true constr
+R4594:4597 aula06_listas NatList :::x_'::'_x not
+R4598:4607 aula06_listas <> oddmembers def
+R4617:4621 aula03_gallina <> false constr
+R4626:4635 aula06_listas <> oddmembers def
+def 4663:4677 NatList test_oddmembers
+R4708:4710 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4682:4691 aula06_listas NatList oddmembers def
+R4693:4693 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R4695:4695 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R4697:4697 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R4699:4699 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R4701:4701 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R4703:4703 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R4705:4705 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R4707:4707 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R4711:4711 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R4713:4713 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R4715:4715 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+def 4762:4776 NatList countoddmembers
+R4781:4787 aula06_listas NatList natlist ind
+R4792:4794 Coq.Init.Datatypes <> nat ind
+def 4861:4881 NatList test_countoddmembers1
+R4915:4917 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4886:4900 aula06_listas NatList countoddmembers prfax
+R4902:4902 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R4904:4904 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R4906:4906 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R4908:4908 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R4910:4910 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R4912:4912 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R4914:4914 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+def 4960:4980 NatList test_countoddmembers2
+R5008:5010 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4985:4999 aula06_listas NatList countoddmembers prfax
+R5001:5001 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R5003:5003 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R5005:5005 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R5007:5007 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+def 5053:5073 NatList test_countoddmembers3
+R5097:5099 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5078:5092 aula06_listas NatList countoddmembers prfax
+R5094:5096 aula06_listas NatList nil constr
+def 5250:5252 NatList bag
+R5257:5263 aula06_listas NatList natlist ind
+def 5466:5470 NatList count
+R5475:5477 Coq.Init.Datatypes <> nat ind
+R5483:5485 aula06_listas NatList bag def
+R5490:5492 Coq.Init.Datatypes <> nat ind
+R5505:5505 aula06_listas <> s var
+R5516:5518 aula06_listas NatList nil constr
+R5523:5523 Coq.Init.Datatypes <> O constr
+R5530:5533 aula06_listas NatList :::x_'::'_x not
+R5549:5555 aula03_gallina <> beq_nat def
+R5559:5559 aula06_listas <> v var
+R5572:5575 aula03_gallina <> true constr
+R5580:5580 Coq.Init.Datatypes <> S constr
+R5583:5587 aula06_listas <> count def
+R5589:5589 aula06_listas <> v var
+R5600:5604 aula03_gallina <> false constr
+R5610:5614 aula06_listas <> count def
+R5616:5616 aula06_listas <> v var
+def 5645:5655 NatList test_count1
+R5681:5683 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5660:5664 aula06_listas NatList count def
+R5668:5668 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R5670:5670 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R5672:5672 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R5674:5674 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R5676:5676 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R5678:5678 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R5680:5680 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+def 5728:5738 NatList test_count2
+R5764:5766 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5743:5747 aula06_listas NatList count def
+R5751:5751 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R5753:5753 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R5755:5755 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R5757:5757 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R5759:5759 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R5761:5761 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R5763:5763 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+def 6205:6207 NatList sum
+R6214:6217 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6221:6224 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6225:6227 aula06_listas NatList bag def
+R6218:6220 aula06_listas NatList bag def
+R6211:6213 aula06_listas NatList bag def
+R6232:6234 aula06_listas NatList app def
+def 6246:6254 NatList test_sum1
+R6288:6290 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6259:6263 aula06_listas NatList count def
+R6268:6270 aula06_listas NatList sum def
+R6280:6280 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R6282:6282 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R6284:6284 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R6286:6286 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R6272:6272 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R6274:6274 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R6276:6276 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R6278:6278 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+def 6338:6340 NatList add
+R6345:6347 Coq.Init.Datatypes <> nat ind
+R6353:6355 aula06_listas NatList bag def
+R6360:6362 aula06_listas NatList bag def
+R6368:6371 aula06_listas NatList :::x_'::'_x not
+R6367:6367 aula06_listas <> v var
+R6372:6372 aula06_listas <> s var
+def 6384:6392 NatList test_add1
+R6420:6422 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6397:6401 aula06_listas NatList count def
+R6406:6408 aula06_listas NatList add def
+R6412:6412 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R6414:6414 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R6416:6416 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R6418:6418 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+def 6468:6476 NatList test_add2
+R6504:6506 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6481:6485 aula06_listas NatList count def
+R6490:6492 aula06_listas NatList add def
+R6496:6496 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R6498:6498 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R6500:6500 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R6502:6502 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+def 6628:6633 NatList member
+R6638:6640 Coq.Init.Datatypes <> nat ind
+R6646:6648 aula06_listas NatList bag def
+R6653:6656 aula03_gallina <> bool ind
+R6669:6673 aula06_listas NatList count def
+R6677:6677 aula06_listas <> s var
+R6675:6675 aula06_listas <> v var
+R6688:6688 Coq.Init.Datatypes <> O constr
+R6693:6697 aula03_gallina <> false constr
+R6708:6711 aula03_gallina <> true constr
+def 6729:6740 NatList test_member1
+R6761:6763 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6745:6750 aula06_listas NatList member def
+R6754:6754 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R6756:6756 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R6758:6758 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R6760:6760 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R6764:6767 aula03_gallina <> true constr
+def 6811:6822 NatList test_member2
+R6843:6845 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6827:6832 aula06_listas NatList member def
+R6836:6836 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R6838:6838 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R6840:6840 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R6842:6842 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R6846:6850 aula03_gallina <> false constr
+prf 7020:7030 NatList bag_theorem
+R7048:7050 Coq.Init.Datatypes <> nat ind
+R7058:7060 aula06_listas NatList bag def
+R7068:7068 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R7086:7090 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R7106:7106 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R7069:7073 aula06_listas NatList count def
+R7078:7080 aula06_listas NatList add def
+R7084:7084 aula06_listas <> b var
+R7082:7082 aula06_listas <> v var
+R7075:7075 aula06_listas <> v var
+R7092:7095 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R7105:7105 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R7096:7100 aula06_listas NatList count def
+R7104:7104 aula06_listas <> b var
+R7102:7102 aula06_listas <> v var
+prf 7322:7328 NatList nil_app
+R7341:7347 aula06_listas NatList natlist ind
+R7359:7361 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R7354:7357 aula06_listas NatList :::x_'++'_x not
+R7352:7353 aula06_listas NatList :::'['_']' not
+R7358:7358 aula06_listas <> l var
+R7362:7362 aula06_listas <> l var
+R7380:7382 aula06_listas NatList app def
+prf 7477:7490 NatList tl_length_pred
+R7503:7509 aula06_listas NatList natlist ind
+R7529:7531 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R7514:7517 Coq.Init.Peano <> pred syndef
+R7520:7525 aula06_listas NatList length def
+R7527:7527 aula06_listas <> l var
+R7532:7537 aula06_listas NatList length def
+R7540:7541 aula06_listas NatList tl def
+R7543:7543 aula06_listas <> l var
+R7743:7748 aula06_listas NatList length def
+prf 7835:7843 NatList app_assoc
+R7865:7871 aula06_listas NatList natlist ind
+R7892:7894 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R7876:7876 aula06_listas NatList :::x_'++'_x not
+R7885:7889 aula06_listas NatList :::x_'++'_x not
+R7879:7882 aula06_listas NatList :::x_'++'_x not
+R7877:7878 aula06_listas <> l1 var
+R7883:7884 aula06_listas <> l2 var
+R7890:7891 aula06_listas <> l3 var
+R7897:7901 aula06_listas NatList :::x_'++'_x not
+R7910:7910 aula06_listas NatList :::x_'++'_x not
+R7895:7896 aula06_listas <> l1 var
+R7904:7907 aula06_listas NatList :::x_'++'_x not
+R7902:7903 aula06_listas <> l2 var
+R7908:7909 aula06_listas <> l3 var
+R8051:8053 aula06_listas NatList app def
+def 8164:8166 NatList rev
+R8171:8177 aula06_listas NatList natlist ind
+R8182:8188 aula06_listas NatList natlist ind
+R8201:8201 aula06_listas <> l var
+R8212:8214 aula06_listas NatList nil constr
+R8222:8224 aula06_listas NatList nil constr
+R8231:8234 aula06_listas NatList :::x_'::'_x not
+R8245:8248 aula06_listas NatList :::x_'++'_x not
+R8240:8242 aula06_listas <> rev def
+R8249:8249 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R8251:8251 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+def 8269:8277 NatList test_rev1
+R8293:8295 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R8282:8284 aula06_listas NatList rev def
+R8286:8286 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R8288:8288 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R8290:8290 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R8292:8292 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R8296:8296 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R8298:8298 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R8300:8300 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R8302:8302 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+def 8346:8354 NatList test_rev2
+R8366:8368 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R8359:8361 aula06_listas NatList rev def
+R8363:8365 aula06_listas NatList nil constr
+R8369:8371 aula06_listas NatList nil constr
+prf 8514:8532 NatList rev_length_firsttry
+R8547:8553 aula06_listas NatList natlist ind
+R8572:8574 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R8558:8563 aula06_listas NatList length def
+R8566:8568 aula06_listas NatList rev def
+R8570:8570 aula06_listas <> l var
+R8575:8580 aula06_listas NatList length def
+R8582:8582 aula06_listas <> l var
+R8707:8709 aula06_listas NatList rev def
+prf 9021:9030 NatList app_length
+R9049:9055 aula06_listas NatList natlist ind
+R9077:9079 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R9060:9065 aula06_listas NatList length def
+R9070:9073 aula06_listas NatList :::x_'++'_x not
+R9068:9069 aula06_listas <> l1 var
+R9074:9075 aula06_listas <> l2 var
+R9080:9080 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R9090:9094 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R9104:9104 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R9081:9086 aula06_listas NatList length def
+R9088:9089 aula06_listas <> l1 var
+R9095:9100 aula06_listas NatList length def
+R9102:9103 aula06_listas <> l2 var
+prf 9332:9341 NatList rev_length
+R9356:9362 aula06_listas NatList natlist ind
+R9381:9383 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R9367:9372 aula06_listas NatList length def
+R9375:9377 aula06_listas NatList rev def
+R9379:9379 aula06_listas <> l var
+R9384:9389 aula06_listas NatList length def
+R9391:9391 aula06_listas <> l var
+R9573:9582 aula06_listas NatList app_length thm
+R9585:9593 aula05_inducao <> plus_comm thm
+R9573:9582 aula06_listas NatList app_length thm
+R9573:9582 aula06_listas NatList app_length thm
+R9585:9593 aula05_inducao <> plus_comm thm
+R9585:9593 aula05_inducao <> plus_comm thm
+prf 9728:9736 NatList app_nil_r
+R9751:9757 aula06_listas NatList natlist ind
+R9769:9771 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R9763:9766 aula06_listas NatList :::x_'++'_x not
+R9762:9762 aula06_listas <> l var
+R9767:9768 aula06_listas NatList :::'['_']' not
+R9772:9772 aula06_listas <> l var
+prf 9880:9892 NatList rev_app_distr
+R9910:9916 aula06_listas NatList natlist ind
+R9935:9937 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R9921:9923 aula06_listas NatList rev def
+R9928:9931 aula06_listas NatList :::x_'++'_x not
+R9926:9927 aula06_listas <> l1 var
+R9932:9933 aula06_listas <> l2 var
+R9944:9947 aula06_listas NatList :::x_'++'_x not
+R9938:9940 aula06_listas NatList rev def
+R9942:9943 aula06_listas <> l2 var
+R9948:9950 aula06_listas NatList rev def
+R9952:9953 aula06_listas <> l1 var
+prf 10002:10015 NatList rev_involutive
+R10030:10036 aula06_listas NatList natlist ind
+R10052:10054 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R10041:10043 aula06_listas NatList rev def
+R10046:10048 aula06_listas NatList rev def
+R10050:10050 aula06_listas <> l var
+R10055:10055 aula06_listas <> l var
+prf 10102:10113 NatList nonzeros_app
+R10132:10138 aula06_listas NatList natlist ind
+R10162:10164 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R10143:10150 aula06_listas NatList nonzeros def
+R10155:10158 aula06_listas NatList :::x_'++'_x not
+R10153:10154 aula06_listas <> l1 var
+R10159:10160 aula06_listas <> l2 var
+R10165:10165 aula06_listas NatList :::x_'++'_x not
+R10177:10182 aula06_listas NatList :::x_'++'_x not
+R10194:10194 aula06_listas NatList :::x_'++'_x not
+R10166:10173 aula06_listas NatList nonzeros def
+R10175:10176 aula06_listas <> l1 var
+R10183:10190 aula06_listas NatList nonzeros def
+R10192:10193 aula06_listas <> l2 var
+def 10555:10565 NatList beq_natlist
+R10576:10582 aula06_listas NatList natlist ind
+R10587:10590 aula03_gallina <> bool ind
+R10607:10608 aula06_listas <> l1 var
+R10603:10604 aula06_listas <> l1 var
+R10619:10620 aula06_listas NatList :::'['_']' not
+R10623:10624 aula06_listas NatList :::'['_']' not
+R10629:10632 aula03_gallina <> true constr
+R10641:10642 aula06_listas NatList :::'['_']' not
+R10647:10651 aula03_gallina <> false constr
+R10657:10658 aula06_listas NatList :::'['_']' not
+R10666:10670 aula03_gallina <> false constr
+R10678:10681 aula06_listas NatList :::x_'::'_x not
+R10688:10691 aula06_listas NatList :::x_'::'_x not
+R10709:10715 aula03_gallina <> beq_nat def
+R10734:10737 aula03_gallina <> true constr
+R10742:10752 aula06_listas <> beq_natlist def
+R10766:10770 aula03_gallina <> false constr
+R10775:10779 aula03_gallina <> false constr
+def 10806:10822 NatList test_beq_natlist1
+R10848:10850 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R10829:10839 aula06_listas NatList beq_natlist def
+R10845:10847 aula06_listas NatList nil constr
+R10841:10843 aula06_listas NatList nil constr
+R10851:10854 aula03_gallina <> true constr
+def 10897:10913 NatList test_beq_natlist2
+R10946:10948 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R10919:10929 aula06_listas NatList beq_natlist def
+R10939:10939 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R10941:10941 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R10943:10943 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R10945:10945 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R10931:10931 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R10933:10933 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R10935:10935 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R10937:10937 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R10949:10952 aula03_gallina <> true constr
+def 10994:11010 NatList test_beq_natlist3
+R11043:11045 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R11016:11026 aula06_listas NatList beq_natlist def
+R11036:11036 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R11038:11038 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R11040:11040 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R11042:11042 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R11028:11028 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R11030:11030 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R11032:11032 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R11034:11034 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R11046:11050 aula03_gallina <> false constr
+prf 11092:11107 NatList beq_natlist_refl
+R11120:11126 aula06_listas NatList natlist ind
+R11135:11137 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R11131:11134 aula03_gallina <> true constr
+R11138:11148 aula06_listas NatList beq_natlist def
+R11152:11152 aula06_listas <> l var
+R11150:11150 aula06_listas <> l var
+def 11413:11419 NatList nth_bad
+R11424:11430 aula06_listas NatList natlist ind
+R11436:11438 Coq.Init.Datatypes <> nat ind
+R11443:11445 Coq.Init.Datatypes <> nat ind
+R11458:11458 aula06_listas <> l var
+R11469:11471 aula06_listas NatList nil constr
+R11513:11516 aula06_listas NatList :::x_'::'_x not
+R11529:11535 aula03_gallina <> beq_nat def
+R11539:11539 Coq.Init.Datatypes <> O constr
+R11537:11537 aula06_listas <> n var
+R11563:11566 aula03_gallina <> true constr
+R11590:11594 aula03_gallina <> false constr
+R11599:11605 aula06_listas <> nth_bad def
+R11611:11614 Coq.Init.Peano <> pred syndef
+R11616:11616 aula06_listas <> n var
+ind 11848:11856 NatList natoption
+constr 11872:11875 NatList Some
+constr 11900:11903 NatList None
+R11882:11885 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R11886:11894 aula06_listas <> natoption ind
+R11879:11881 Coq.Init.Datatypes <> nat ind
+R11907:11915 aula06_listas <> natoption ind
+def 11971:11979 NatList nth_error
+R11984:11990 aula06_listas NatList natlist ind
+R11996:11998 Coq.Init.Datatypes <> nat ind
+R12003:12011 aula06_listas NatList natoption ind
+R12024:12024 aula06_listas <> l var
+R12035:12037 aula06_listas NatList nil constr
+R12042:12045 aula06_listas NatList None constr
+R12052:12055 aula06_listas NatList :::x_'::'_x not
+R12068:12074 aula03_gallina <> beq_nat def
+R12078:12078 Coq.Init.Datatypes <> O constr
+R12076:12076 aula06_listas <> n var
+R12102:12105 aula03_gallina <> true constr
+R12110:12113 aula06_listas NatList Some constr
+R12134:12138 aula03_gallina <> false constr
+R12143:12151 aula06_listas <> nth_error def
+R12157:12160 Coq.Init.Peano <> pred syndef
+R12162:12162 aula06_listas <> n var
+def 12200:12214 NatList test_nth_error1
+R12241:12243 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R12220:12228 aula06_listas NatList nth_error def
+R12230:12230 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R12232:12232 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R12234:12234 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R12236:12236 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R12238:12238 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R12244:12247 aula06_listas NatList Some constr
+def 12292:12306 NatList test_nth_error2
+R12333:12335 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R12312:12320 aula06_listas NatList nth_error def
+R12322:12322 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R12324:12324 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R12326:12326 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R12328:12328 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R12330:12330 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R12336:12339 aula06_listas NatList Some constr
+def 12384:12398 NatList test_nth_error3
+R12425:12427 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R12404:12412 aula06_listas NatList nth_error def
+R12414:12414 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R12416:12416 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R12418:12418 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R12420:12420 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R12422:12422 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R12428:12431 aula06_listas NatList None constr
+def 12569:12578 NatList nth_error'
+R12583:12589 aula06_listas NatList natlist ind
+R12595:12597 Coq.Init.Datatypes <> nat ind
+R12602:12610 aula06_listas NatList natoption ind
+R12623:12623 aula06_listas <> l var
+R12634:12636 aula06_listas NatList nil constr
+R12641:12644 aula06_listas NatList None constr
+R12651:12654 aula06_listas NatList :::x_'::'_x not
+R12664:12670 aula03_gallina <> beq_nat def
+R12674:12674 Coq.Init.Datatypes <> O constr
+R12672:12672 aula06_listas <> n var
+R12708:12717 aula06_listas <> nth_error' def
+R12723:12726 Coq.Init.Peano <> pred syndef
+R12728:12728 aula06_listas <> n var
+R12681:12684 aula06_listas NatList Some constr
+ind 12790:12793 NatList tipo
+constr 12809:12813 NatList cons1
+constr 12826:12830 NatList cons2
+R12817:12820 aula06_listas <> tipo ind
+R12834:12837 aula06_listas <> tipo ind
+def 12852:12859 NatList beq_tipo
+R12868:12870 Coq.Init.Datatypes <> nat ind
+R12875:12878 aula06_listas NatList tipo ind
+R12888:12894 aula03_gallina <> beq_nat def
+R12898:12898 aula06_listas <> m var
+R12896:12896 aula06_listas <> n var
+R12916:12920 aula06_listas NatList cons1 constr
+R12905:12909 aula06_listas NatList cons2 constr
+def 12935:12942 NatList teste_if
+R12951:12953 Coq.Init.Datatypes <> nat ind
+R12958:12961 aula03_gallina <> bool ind
+R12971:12978 aula06_listas NatList beq_tipo def
+R12982:12982 aula06_listas <> m var
+R12980:12980 aula06_listas <> n var
+R13001:13005 aula03_gallina <> false constr
+R12989:12992 aula03_gallina <> true constr
+R13018:13025 aula06_listas NatList teste_if def
+def 13233:13243 NatList option_elim
+R13250:13252 Coq.Init.Datatypes <> nat ind
+R13260:13268 aula06_listas NatList natoption ind
+R13273:13275 Coq.Init.Datatypes <> nat ind
+R13288:13288 aula06_listas <> o var
+R13299:13302 aula06_listas NatList Some constr
+R13317:13320 aula06_listas NatList None constr
+R13325:13325 aula06_listas <> d var
+def 13459:13466 NatList hd_error
+R13473:13479 aula06_listas NatList natlist ind
+R13484:13492 aula06_listas NatList natoption ind
+R13505:13505 aula06_listas <> l var
+R13516:13518 aula06_listas NatList nil constr
+R13523:13526 aula06_listas NatList None constr
+R13533:13536 aula06_listas NatList :::x_'::'_x not
+R13542:13545 aula06_listas NatList Some constr
+def 13566:13579 NatList test_hd_error1
+R13594:13596 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R13583:13590 aula06_listas NatList hd_error def
+R13592:13593 aula06_listas NatList :::'['_']' not
+R13597:13600 aula06_listas NatList None constr
+def 13644:13657 NatList test_hd_error2
+R13673:13675 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R13661:13668 aula06_listas NatList hd_error def
+R13670:13670 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R13672:13672 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R13676:13679 aula06_listas NatList Some constr
+def 13725:13738 NatList test_hd_error3
+R13756:13758 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R13742:13749 aula06_listas NatList hd_error def
+R13751:13751 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R13753:13753 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R13755:13755 aula06_listas NatList :::'['_x_';'_'..'_';'_x_']' not
+R13759:13762 aula06_listas NatList Some constr
+prf 13919:13932 NatList option_elim_hd
+R13946:13952 aula06_listas NatList natlist ind
+R13964:13966 Coq.Init.Datatypes <> nat ind
+R13984:13986 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R13972:13973 aula06_listas NatList hd def
+R13983:13983 aula06_listas <> l var
+R13975:13981 aula06_listas <> default var
+R13987:13997 aula06_listas NatList option_elim def
+R14008:14015 aula06_listas NatList hd_error def
+R14017:14017 aula06_listas <> l var
+R13999:14005 aula06_listas <> default var
+R14036:14037 aula06_listas NatList hd def
+R14046:14056 aula06_listas NatList option_elim def
+R14139:14145 aula06_listas NatList <> mod
+ind 14441:14442 <> id
+constr 14458:14459 <> Id
+R14466:14469 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R14470:14471 aula06_listas <> id ind
+R14463:14465 Coq.Init.Datatypes <> nat ind
+def 14486:14491 <> beq_id
+R14502:14503 aula06_listas <> id ind
+R14521:14522 aula06_listas <> x2 var
+R14517:14518 aula06_listas <> x1 var
+R14533:14534 aula06_listas <> Id constr
+R14540:14541 aula06_listas <> Id constr
+R14549:14555 aula03_gallina <> beq_nat def
+prf 14616:14626 <> beq_id_refl
+R14646:14648 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R14642:14645 aula03_gallina <> true constr
+R14649:14654 aula06_listas <> beq_id def
+R14658:14658 aula06_listas <> x var
+R14656:14656 aula06_listas <> x var
+mod 14833:14842 <> PartialMap
+ind 14874:14884 PartialMap partial_map
+constr 14900:14904 PartialMap empty
+constr 14925:14930 PartialMap record
+R14909:14919 aula06_listas <> partial_map ind
+R14936:14939 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R14943:14946 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R14958:14961 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R14962:14972 aula06_listas <> partial_map ind
+R14947:14957 aula06_listas <> partial_map ind
+R14940:14942 Coq.Init.Datatypes <> nat ind
+R14934:14935 aula06_listas <> id ind
+def 15403:15408 PartialMap update
+R15415:15425 aula06_listas PartialMap partial_map ind
+R15451:15452 aula06_listas <> id ind
+R15464:15466 Coq.Init.Datatypes <> nat ind
+R15489:15499 aula06_listas PartialMap partial_map ind
+R15506:15511 aula06_listas PartialMap record constr
+R15521:15521 aula06_listas <> d var
+R15515:15519 aula06_listas <> value var
+R15513:15513 aula06_listas <> x var
+def 15533:15549 PartialMap test_partial_map1
+R15555:15555 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R15577:15583 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R15605:15605 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R15556:15561 aula06_listas PartialMap update def
+R15570:15571 aula06_listas <> Id constr
+R15563:15567 aula06_listas PartialMap empty constr
+R15584:15589 aula06_listas PartialMap record constr
+R15600:15604 aula06_listas PartialMap empty constr
+R15592:15593 aula06_listas <> Id constr
+def 15653:15669 PartialMap test_partial_map2
+R15675:15675 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R15715:15721 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R15761:15761 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R15676:15681 aula06_listas PartialMap update def
+R15708:15709 aula06_listas <> Id constr
+R15684:15689 aula06_listas PartialMap record constr
+R15700:15704 aula06_listas PartialMap empty constr
+R15692:15693 aula06_listas <> Id constr
+R15722:15727 aula06_listas PartialMap record constr
+R15739:15744 aula06_listas PartialMap record constr
+R15755:15759 aula06_listas PartialMap empty constr
+R15747:15748 aula06_listas <> Id constr
+R15730:15731 aula06_listas <> Id constr
+def 15937:15940 PartialMap find
+R15947:15948 aula06_listas <> id ind
+R15956:15966 aula06_listas PartialMap partial_map ind
+R15971:15979 aula06_listas NatList natoption ind
+R15992:15992 aula06_listas <> d var
+R16003:16007 aula06_listas PartialMap empty constr
+R16020:16023 aula06_listas NatList None constr
+R16029:16034 aula06_listas PartialMap record constr
+R16049:16054 aula06_listas <> beq_id def
+R16056:16056 aula06_listas <> x var
+R16119:16122 aula06_listas <> find def
+R16124:16124 aula06_listas <> x var
+R16086:16089 aula06_listas NatList Some constr
+prf 16180:16188 PartialMap update_eq
+R16206:16216 aula06_listas PartialMap partial_map ind
+R16224:16225 aula06_listas <> id ind
+R16232:16234 Coq.Init.Datatypes <> nat ind
+R16263:16265 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R16242:16245 aula06_listas PartialMap find def
+R16250:16255 aula06_listas PartialMap update def
+R16261:16261 aula06_listas <> v var
+R16259:16259 aula06_listas <> x var
+R16257:16257 aula06_listas <> d var
+R16247:16247 aula06_listas <> x var
+R16266:16269 aula06_listas NatList Some constr
+R16271:16271 aula06_listas <> v var
+prf 16356:16365 PartialMap update_neq
+R16383:16393 aula06_listas PartialMap partial_map ind
+R16403:16404 aula06_listas <> id ind
+R16411:16413 Coq.Init.Datatypes <> nat ind
+R16439:16446 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R16468:16470 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R16447:16450 aula06_listas PartialMap find def
+R16455:16460 aula06_listas PartialMap update def
+R16466:16466 aula06_listas <> o var
+R16464:16464 aula06_listas <> y var
+R16462:16462 aula06_listas <> d var
+R16452:16452 aula06_listas <> x var
+R16471:16474 aula06_listas PartialMap find def
+R16478:16478 aula06_listas <> d var
+R16476:16476 aula06_listas <> x var
+R16431:16433 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R16421:16426 aula06_listas <> beq_id def
+R16430:16430 aula06_listas <> y var
+R16428:16428 aula06_listas <> x var
+R16434:16438 aula03_gallina <> false constr
+R16523:16532 aula06_listas PartialMap <> mod
+R16741:16743 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R16737:16739 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R16762:16764 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R16757:16759 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
