@@ -1,15 +1,15 @@
-(** * Indução em Coq *)
+(** * Indu\u00e7\u00e3o em Coq *)
 
 Set Warnings "-notation-overridden,-parsing".
-Add LoadPath "E:\Users\mmmb\Desktop\coq".
+Add LoadPath "/Users/marcosmonteiro/desktop/coq".
 Require Export aula07_poli.
 
 (* ############################################### *)
-(** * Funções de alta ordem *)
+(** * Fun\u00e7\u00f5es de alta ordem *)
 
 (** Assim como outras linguagens funcionais,
-    é possível passar funções como argumentos,
-    retornar funções e armazenar funções em
+    \u00e9 poss\u00edvel passar fun\u00e7\u00f5es como argumentos,
+    retornar fun\u00e7\u00f5es e armazenar fun\u00e7\u00f5es em
     estruturas de dados. *)
 
 Definition doit3times {X:Type} (f:X->X) (n:X) : X :=
@@ -27,7 +27,7 @@ Example test_doit3times':
   doit3times negb true = false.
 Proof. reflexivity.  Qed.
 
-(** Uma função mais útil é [filter]. *)
+(** Uma fun\u00e7\u00e3o mais \u00fatil \u00e9 [filter]. *)
 
 Fixpoint filter {X:Type} (test: X->bool) (l:list X)
                 : (list X) :=
@@ -51,10 +51,10 @@ Example test_filter2:
   = [ [3]; [4]; [8] ].
 Proof. reflexivity.  Qed.
 
-(** É possível definir funções "on the fly"
-    (anônimas); ou seja, sem dar um nome a elas.
+(** \u00c9 poss\u00edvel definir fun\u00e7\u00f5es "on the fly"
+    (an\u00f4nimas); ou seja, sem dar um nome a elas.
 
-    O exemplo a seguir não precisa da definição
+    O exemplo a seguir n\u00e3o precisa da defini\u00e7\u00e3o
     de [length_is]. *)
 
 Example test_filter2':
@@ -64,21 +64,21 @@ Example test_filter2':
 Proof. reflexivity.  Qed.
 
 (** **** Exercise: (partition)  *)
-(** Use [filter] para escrever a função [partition]:
+(** Use [filter] para escrever a fun\u00e7\u00e3o [partition]:
 
       partition : forall X : Type,
                   (X -> bool) -> list X
                   -> list X * list X
 
-    Dado um conjunto [X], uma função teste [X -> bool],
-    e uma [list X], a função [partition] retorna um
-    par de listas: o primeiro é uma sublista com
+    Dado um conjunto [X], uma fun\u00e7\u00e3o teste [X -> bool],
+    e uma [list X], a fun\u00e7\u00e3o [partition] retorna um
+    par de listas: o primeiro \u00e9 uma sublista com
     os elementos que satisfazem o teste; o segundo,
-    com aqueles que não satisfazem o teste. *)
+    com aqueles que n\u00e3o satisfazem o teste. *)
 
 Definition partition {X : Type} (test : X -> bool)
                      (l : list X) : list X * list X
-(* SUBSTITUA COM ":= _sua_definição_ ." *). Admitted.
+(* SUBSTITUA COM ":= _sua_defini\u00e7\u00e3o_ ." *). Admitted.
 
 Example test_partition1:
   partition oddb [1;2;3;4;5]
@@ -92,7 +92,7 @@ Example test_partition2:
 Proof.
  (* COMPLETE AQUI *) Admitted.
 
-(** Outra função útil é [map]. *)
+(** Outra fun\u00e7\u00e3o \u00fatil \u00e9 [map]. *)
 
 Fixpoint map {X Y:Type} (f:X->Y) (l:list X)
              : (list Y) :=
@@ -106,7 +106,7 @@ Example test_map1:
   = [5;3;5].
 Proof. reflexivity.  Qed.
 
-(** Observe que as listas de entrada e saída
+(** Observe que as listas de entrada e sa\u00edda
     podem ter tipos diferentes. *)
 
 Example test_map2:
@@ -121,7 +121,7 @@ Proof. reflexivity. Qed.
 
 (** **** Exercise: (map_rev)  *)
 (** Prove que [map] e [rev] comutam. Talvez
-    você precise definir um lemma auxiliar. *)
+    voc\u00ea precise definir um lemma auxiliar. *)
 
 Theorem map_rev : forall (X Y : Type)
   (f : X -> Y) (l : list X),
@@ -129,9 +129,9 @@ Theorem map_rev : forall (X Y : Type)
 Proof.
  (* COMPLETE AQUI *) Admitted.
 
-(** Outra função útil é [fold]. Esta função insere
-    um operador binário [f] entre cada par de elementos
-    de uma certa lista. É preciso definir um elemento
+(** Outra fun\u00e7\u00e3o \u00fatil \u00e9 [fold]. Esta fun\u00e7\u00e3o insere
+    um operador bin\u00e1rio [f] entre cada par de elementos
+    de uma certa lista. \u00c9 preciso definir um elemento
     base / inicial. Por exemplo, fold plus [1;2;3;4] 0
     retorna 1 + (2 + (3 + (4 + 0))). *)
 
@@ -156,7 +156,7 @@ Example fold_example3 :
   = [1;2;3;4].
 Proof. reflexivity. Qed.
 
-(** É possível definir funções que retornam funções. *)
+(** \u00c9 poss\u00edvel definir fun\u00e7\u00f5es que retornam fun\u00e7\u00f5es. *)
 
 Definition constfun {X: Type} (x: X) : nat->X :=
   fun (k:nat) => x.
@@ -171,16 +171,16 @@ Example constfun_example2 :
   (constfun 5) 99 = 5.
 Proof. reflexivity. Qed.
 
-(** A função [plus] é um exemplo disto. *)
+(** A fun\u00e7\u00e3o [plus] \u00e9 um exemplo disto. *)
 
 Check plus.
 (* ==> nat -> nat -> nat *)
 
-(** O operador [->] é binário. Logo, [nat -> nat -> nat]
+(** O operador [->] \u00e9 bin\u00e1rio. Logo, [nat -> nat -> nat]
     significa [nat -> (nat -> nat)]. Isto permite
-    aplicação parcial de [plus]. Além disto, processar
-    uma lista de argumentos com funções que retornam
-    funções é conhecido como "currying". *)
+    aplica\u00e7\u00e3o parcial de [plus]. Al\u00e9m disto, processar
+    uma lista de argumentos com fun\u00e7\u00f5es que retornam
+    fun\u00e7\u00f5es \u00e9 conhecido como "currying". *)
 
 Definition plus3 := plus 3.
 Check plus3.
@@ -198,8 +198,8 @@ Proof. reflexivity.  Qed.
 Module Exercises.
 
 (** **** Exercise: (fold_length)  *)
-(** Muitas funções podem ser implementadas em termos
-    de [fold]. Por exemplo, a seguir uma definição
+(** Muitas fun\u00e7\u00f5es podem ser implementadas em termos
+    de [fold]. Por exemplo, a seguir uma defini\u00e7\u00e3o
     alternativa para [length]. *)
 
 Definition fold_length {X : Type} (l : list X) : nat :=
@@ -216,12 +216,12 @@ Proof.
    (* COMPLETE AQUI *) Admitted.
 
 (** **** Exercise: (fold_map)  *)
-(** Também podemos definir [map] em termos de [fold].
-    Complete a definição [fold_map] e prove sua corretude. *)
+(** Tamb\u00e9m podemos definir [map] em termos de [fold].
+    Complete a defini\u00e7\u00e3o [fold_map] e prove sua corretude. *)
 
 Definition fold_map {X Y:Type} (f : X -> Y)
                     (l : list X) : list Y
-(* SUBSTITUA COM ":= _sua_definição_ ." *). Admitted.
+(* SUBSTITUA COM ":= _sua_defini\u00e7\u00e3o_ ." *). Admitted.
 
 Theorem fold_map_correct :
   forall (X Y : Type) (f : X -> Y) (l : list X),

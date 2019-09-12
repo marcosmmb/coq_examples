@@ -2,70 +2,70 @@
 
 (** - Require: carrega uma biblioteca
       e.g., Require Coq.Lists.List.
-    - Import: coloca as definições em escopo
+    - Import: coloca as defini\u00e7\u00f5es em escopo
       (sem o Import: precisar referenciar
-      os nomes pela identificação completa;
+      os nomes pela identifica\u00e7\u00e3o completa;
       i.e., fully qualified)
       e.g., Print List.map vs. Print map
     - Require Import: carrega e coloca em escopo
-      Não se usa Require ao importar sub-módulos
+      N\u00e3o se usa Require ao importar sub-m\u00f3dulos
       e.g., Import ListNotations
     - Require Export: carrega, coloca em escopo
-      e torna o módulo visível onde o módulo
+      e torna o m\u00f3dulo vis\u00edvel onde o m\u00f3dulo
       atual for utilizado
 
-  Mais informações:
+  Mais informa\u00e7\u00f5es:
   - https://coq.inria.fr/tutorial/3-modules
   - https://stackoverflow.com/questions/47973317/require-import-require-import
 *)
 
 (** Para importar o arquivo da aula passada,
-    é preciso ter a versão compilada dele.
+    \u00e9 preciso ter a vers\u00e3o compilada dele.
     Comando: coqc aula02_gallina.v *)
-Add LoadPath "E:\Users\mmmb\Desktop\coq".
+Add LoadPath "/Users/marcosmonteiro/desktop/coq".
 Require Export aula03_gallina.
 
 (* ############################################### *)
-(** * Prova por simplificação *)
+(** * Prova por simplifica\u00e7\u00e3o *)
 
 (** Lidando com o quantificador universal:
     considerar a prova no contexto de um membro
-    arbitrariamente escolhido no domínio.
+    arbitrariamente escolhido no dom\u00ednio.
 
     Exemplo:
-    Todos os laboratórios possuem datashow.
-    Se há datashow, há uma tela de projeção.
-    Logo, há tela de projeção em todos os laboratórios.
+    Todos os laborat\u00f3rios possuem datashow.
+    Se h\u00e1 datashow, h\u00e1 uma tela de proje\u00e7\u00e3o.
+    Logo, h\u00e1 tela de proje\u00e7\u00e3o em todos os laborat\u00f3rios.
 
-    Formalização do argumento:
+    Formaliza\u00e7\u00e3o do argumento:
     1. forall l : lab, D(l)            [premissa]
     2. forall l : lab, D(l) -> T(l)    [premissa]
-    3. D(a)         [Instanciação Universal em 1]
-    4. D(a) -> T(a) [Instanciação Universal em 2]
+    3. D(a)         [Instancia\u00e7\u00e3o Universal em 1]
+    4. D(a) -> T(a) [Instancia\u00e7\u00e3o Universal em 2]
     5. T(a)               [modus ponens em 3 e 4]
     6. forall l : lab, T(l) [Gen. Universal em 5]
 
     Idealmente, ao instanciar, devemos usar
-    um símbolo diferente do ligado pela
-    quantificação universal (e.g., x vs. a).
-    Na prática, usa-se o mesmo símbolo.
+    um s\u00edmbolo diferente do ligado pela
+    quantifica\u00e7\u00e3o universal (e.g., x vs. a).
+    Na pr\u00e1tica, usa-se o mesmo s\u00edmbolo.
 
     1. forall l : lab, D(l)            [premissa]
     2. forall l : lab, D(l) -> T(l)    [premissa]
-    3. D(l)         [Instanciação Universal em 1]
-    4. D(l) -> T(l) [Instanciação Universal em 2]
+    3. D(l)         [Instancia\u00e7\u00e3o Universal em 1]
+    4. D(l) -> T(l) [Instancia\u00e7\u00e3o Universal em 2]
     5. T(l)               [modus ponens em 3 e 4]
     6. forall l : lab, T(l) [Gen. Universal em 5]    
     
-    Em Coq, a tática [intro] ou [intros] realiza
-    IU (instanciação universal), enquanto que
+    Em Coq, a t\u00e1tica [intro] ou [intros] realiza
+    IU (instancia\u00e7\u00e3o universal), enquanto que
     [generalize dependent] realiza GU
-    (generalização universal). A segunda tática
+    (generaliza\u00e7\u00e3o universal). A segunda t\u00e1tica
     veremos depois.
 
-    Uma tática é um comando usado entre [Proof]
+    Uma t\u00e1tica \u00e9 um comando usado entre [Proof]
     e [Qed] para guiar o processo de provar
-    alguma afirmação.
+    alguma afirma\u00e7\u00e3o.
 
     Palavras [Theorem], [Example] e [Lemma]
     possuem praticamente o mesmo significado.
@@ -76,10 +76,10 @@ Proof.
   intros n. simpl. reflexivity.
 Qed.
 
-(** [reflexivity] já realiza alguma simplificação
+(** [reflexivity] j\u00e1 realiza alguma simplifica\u00e7\u00e3o
     automaticamente. Mesmo assim, o uso de [simpl]
     pode ser interessante para ver o estado
-    intermediário da prova]. *)
+    intermedi\u00e1rio da prova]. *)
 
 Theorem plus_O_n' : forall n : nat, 0 + n = n.
 Proof.
@@ -87,15 +87,15 @@ Proof.
 Qed.
 
 (** Inclusive, [reflexivity] realiza algumas
-    simplificações adicionais; por exemplo,
-    expandindo definições (ver exercício nandb'
+    simplifica\u00e7\u00f5es adicionais; por exemplo,
+    expandindo defini\u00e7\u00f5es (ver exerc\u00edcio nandb'
     da aula passada = aula02_gallina.v.
 
-    [reflexivity] faz isto, pois se a tática
-    funcionar, a prova é concluída e não
-    precisaremos ver proposições eventualmente
-    mais complicadas em função do processo
-    de expansão. *)
+    [reflexivity] faz isto, pois se a t\u00e1tica
+    funcionar, a prova \u00e9 conclu\u00edda e n\u00e3o
+    precisaremos ver proposi\u00e7\u00f5es eventualmente
+    mais complicadas em fun\u00e7\u00e3o do processo
+    de expans\u00e3o. *)
 
 (** Outros exemplos de prova *)
 
@@ -114,18 +114,18 @@ Qed.
 (* ############################################### *)
 (** * Prova por reescrita *)
 
-(** Na próxima prova, a conclusão só é válida
-    se [n] e [m] forem o mesmo número (i.e., [n = m]).
+(** Na pr\u00f3xima prova, a conclus\u00e3o s\u00f3 \u00e9 v\u00e1lida
+    se [n] e [m] forem o mesmo n\u00famero (i.e., [n = m]).
     
-    A tática [intros] também permite mover para o
-    contexto esta hipótese. Em seguida, a tática
+    A t\u00e1tica [intros] tamb\u00e9m permite mover para o
+    contexto esta hip\u00f3tese. Em seguida, a t\u00e1tica
     [rewrite] para reescrever o objetivo da prova
-    a partir da igualdade descrita na hipótese.
+    a partir da igualdade descrita na hip\u00f3tese.
 
-    Por padrão, a reescrita é da esquerda para
+    Por padr\u00e3o, a reescrita \u00e9 da esquerda para
     a direita: ->. Logo, pode-se omitir o ->.
-    No entanto, da direita para a esquerda é
-    necessário usar o símbolo <-.
+    No entanto, da direita para a esquerda \u00e9
+    necess\u00e1rio usar o s\u00edmbolo <-.
 
 *)
 
@@ -135,7 +135,7 @@ Theorem plus_id_example : forall n m:nat,
 Proof.
   (* move [n] e [m] para o contexto *)
   intros n m.
-  (* move o antecedente da implicação
+  (* move o antecedente da implica\u00e7\u00e3o
      para o contexto sob o nome "H" *)
   intros H.
   (* reescreve o objetivo usando "H" *)
@@ -157,17 +157,17 @@ Qed.
 
 (** Lembrando que o comando [Admitted] deve
     ser removido. Ele diz para aceitar,
-    no momento, que a afirmação é verdadeira.
+    no momento, que a afirma\u00e7\u00e3o \u00e9 verdadeira.
     Permite focar nos argumentos principais,
     para depois voltar para as provas auxiliares.
-    Contudo, é preciso usar com cuidado
-    para não introduzir afirmações falsas como
+    Contudo, \u00e9 preciso usar com cuidado
+    para n\u00e3o introduzir afirma\u00e7\u00f5es falsas como
     verdadeiras *)
 
-(** É possível usar [rewrite] considerando
-    teoremas previamente provados. Se a afirmação
-    prévia envolver variáveis quantificadas,
-    Coq tenta instanciá-las considerando
+(** \u00c9 poss\u00edvel usar [rewrite] considerando
+    teoremas previamente provados. Se a afirma\u00e7\u00e3o
+    pr\u00e9via envolver vari\u00e1veis quantificadas,
+    Coq tenta instanci\u00e1-las considerando
     o objetivo de prova atual *)
 
 Theorem mult_0_plus : forall n m : nat,
@@ -180,19 +180,19 @@ Proof.
 Qed.
 
 (** O exemplo anterior ilustra o quanto
-    o comando Search pode ser útil.
-    Contudo, só funciona nos módulos
+    o comando Search pode ser \u00fatil.
+    Contudo, s\u00f3 funciona nos m\u00f3dulos
     "Required".
 
     Possibilidades de uso:
     - procura pelo nome: Search "len".
       compare com o resultado de Search len.
     - procura por id: Search False.
-    - procura por padrão: Search (0 + _).
+    - procura por padr\u00e3o: Search (0 + _).
 
     Outros comandos:
-    - SearchPattern: somente na conclusão
-    - SearchRewrite: conclusões _ = _
+    - SearchPattern: somente na conclus\u00e3o
+    - SearchRewrite: conclus\u00f5es _ = _
     
     Links:
     - https://quanttype.net/posts/2016-04-19-finding-that-lemma.html
@@ -208,9 +208,9 @@ Proof.
   (* COMPLETE AQUI *) Admitted.
 
 (* ############################################### *)
-(** * Prova por análise de casos *)
+(** * Prova por an\u00e1lise de casos *)
 
-(** Nem tudo pode ser provado por simplificação e
+(** Nem tudo pode ser provado por simplifica\u00e7\u00e3o e
     reescrita. Veja o caso a seguir. O comando
     [Abort] permite abortar uma prova *)
 
@@ -218,31 +218,31 @@ Theorem plus_1_neq_0_firsttry : forall n : nat,
   beq_nat (n + 1) 0 = false.
 Proof.
   intros n.
-  simpl. (* não faz nada! *)
+  simpl. (* n\u00e3o faz nada! *)
 Abort.
 
 (** Tanto [beq_nat] como [+] faz casamento
-    de padrão com o primeiro argumento *)
+    de padr\u00e3o com o primeiro argumento *)
 
 Print beq_nat.
 Print NatPlayground2.plus.
 
-(** Aqui, o primeiro argumento de [+] é [n];
-    e de beq_nat, a expressão [n + 1].
+(** Aqui, o primeiro argumento de [+] \u00e9 [n];
+    e de beq_nat, a express\u00e3o [n + 1].
 
-    Para avançar, é preciso considerar as
-    possíveis formas de [n] *)
+    Para avan\u00e7ar, \u00e9 preciso considerar as
+    poss\u00edveis formas de [n] *)
 
 Print nat.
 
-(** Um número ou é O (zero) ou o sucessor
-    de outro número. A tática [destruct]
-    cria uma análise de casos.
+(** Um n\u00famero ou \u00e9 O (zero) ou o sucessor
+    de outro n\u00famero. A t\u00e1tica [destruct]
+    cria uma an\u00e1lise de casos.
 
     Observe que nesta prova, [0 + 1] pode
     ser simplificado, o que permite simplificar
     beq_nat. No outro caso, beq_nat (S _ + 1) 0
-    também permite simplificação pela forma
+    tamb\u00e9m permite simplifica\u00e7\u00e3o pela forma
     que beq_nat foi definido.
 *)
 
@@ -254,26 +254,26 @@ Proof.
   - simpl. reflexivity.
 Qed.
 
-(** A tática [destruct] permite especificar
-    um padrão de introdução (_intro pattern_)
-    usando a anotação "[as [| n']]". Este
-    padrão é opcional.
+(** A t\u00e1tica [destruct] permite especificar
+    um padr\u00e3o de introdu\u00e7\u00e3o (_intro pattern_)
+    usando a anota\u00e7\u00e3o "[as [| n']]". Este
+    padr\u00e3o \u00e9 opcional.
 
-    O que vai entre [[]] é uma lista de lista
+    O que vai entre [[]] \u00e9 uma lista de lista
     de nomes, separadas por |, cada lista
     informando o nome dos elementos a serem
     introduzidos.
 
-    No caso de nat, o primeiro construtor não
+    No caso de nat, o primeiro construtor n\u00e3o
     recebe argumentos; logo, a lista vazia. O
     segundo construtor recebe um natural,
     denotado por n'.
 
-    O símbolo [-] separa os casos (sub-objetivos
+    O s\u00edmbolo [-] separa os casos (sub-objetivos
     de prova). A rigor, estes podem ser omitidos,
-    e os comandos irão atuar nos sub-objetivos
+    e os comandos ir\u00e3o atuar nos sub-objetivos
     na ordem em que foram criados. No entanto,
-    é uma boa prática usuar o símbolo [-].
+    \u00e9 uma boa pr\u00e1tica usuar o s\u00edmbolo [-].
 *)
 
 Print negb.
@@ -304,7 +304,7 @@ Proof.
     + reflexivity.
 Qed.
 
-(** Símbolos: [-], [+] e [*]. Se for preciso
+(** S\u00edmbolos: [-], [+] e [*]. Se for preciso
     mais hierarquia, usar [{}]. *)
 
 Theorem andb_commutative' : forall b c,
@@ -319,7 +319,7 @@ Proof.
     { reflexivity. } }
 Qed.
 
-(** É possível combinar [intros] com [destruct].
+(** \u00c9 poss\u00edvel combinar [intros] com [destruct].
     No exemplo a seguir, "intros [|n].", faz o mesmo
     que "intros x y. destruct y as [|y]." *)
 
@@ -331,7 +331,7 @@ Proof.
   - reflexivity.
 Qed.
 
-(** Se não houver argumentos para o [destruct],
+(** Se n\u00e3o houver argumentos para o [destruct],
     deve-se usar [[]]. *)
 
 Theorem andb_commutative'' :
@@ -345,7 +345,7 @@ Proof.
 Qed.
 
 (** **** Exercise: (andb_true_elim2)  *)
-(** Prova a seguinte afirmação usando [destruct] *)
+(** Prova a seguinte afirma\u00e7\u00e3o usando [destruct] *)
 
 Theorem andb_true_elim2 : forall b c : bool,
   andb b c = true -> c = true.
@@ -353,19 +353,19 @@ Proof.
   (* COMPLETE AQUI *) Admitted.
 
 (** **** Exercise: (zero_nbeq_plus_1)  *)
-(** Prova a seguinte afirmação usando [destruct] *)
+(** Prova a seguinte afirma\u00e7\u00e3o usando [destruct] *)
 Theorem zero_nbeq_plus_1 : forall n : nat,
   beq_nat 0 (n + 1) = false.
 Proof.
   (* COMPLETE AQUI *) Admitted.
 
 (* ############################################### *)
-(** ** Fixpoints e recursão estrutural *)
+(** ** Fixpoints e recurs\u00e3o estrutural *)
 
-(** Toda função em Coq precisa terminar. Para ter
-    esta garantia, é necessário ter uma recursão
+(** Toda fun\u00e7\u00e3o em Coq precisa terminar. Para ter
+    esta garantia, \u00e9 necess\u00e1rio ter uma recurs\u00e3o
     estrutural em elementos progressivamente
-    "menores". Veja a função "plus". *)
+    "menores". Veja a fun\u00e7\u00e3o "plus". *)
 
 Print NatPlayground2.plus.
 
@@ -375,8 +375,8 @@ Fixpoint plus' (n : nat) (m : nat) : nat :=
   | S n' => S (plus' n' m)
   end.
 
-(** É possível ter funções que sempre
-    terminam, mas que Coq não consegue
+(** \u00c9 poss\u00edvel ter fun\u00e7\u00f5es que sempre
+    terminam, mas que Coq n\u00e3o consegue
     perceber isto. *)
 
 Fail Fixpoint f (n : nat) : bool :=
@@ -406,7 +406,7 @@ Fixpoint f' (n : nat) : bool :=
   end.
 
 (** Outra possibilidade. Qual a
-    diferença? *)
+    diferen\u00e7a? *)
 
 Fixpoint f'' (n : nat) (qtd : nat) : bool :=
   match n, qtd with
@@ -418,7 +418,7 @@ Fixpoint f'' (n : nat) (qtd : nat) : bool :=
                     end
   end.
 
-(** Entenda as diferenças observadas
+(** Entenda as diferen\u00e7as observadas
     a seguir. *)
 
 Compute (f' 4).
@@ -426,14 +426,14 @@ Compute (f'' 4 4).
 Compute (f'' 4 3).
 
 (** O comportamento de [f] pode ser resumido assim:
-    - Se [n] for zero, então o retorno é true.
-    - Se [n] for ímpar, então chama recursivamente
-      f' (n'-1). Se [n] é ímpar, então [n'-1]
-      também é ímpar, uma vez que [S n = n].
-      Logo, todas as próximas chamadas fará [n'-1].
-    - Se [n] for par, na primeira recursão
-      chama [f] considerando [n'+2], que é sempre
-      ímpar, uma vez que [S n = n] e [n] é par.
+    - Se [n] for zero, ent\u00e3o o retorno \u00e9 true.
+    - Se [n] for \u00edmpar, ent\u00e3o chama recursivamente
+      f' (n'-1). Se [n] \u00e9 \u00edmpar, ent\u00e3o [n'-1]
+      tamb\u00e9m \u00e9 \u00edmpar, uma vez que [S n = n].
+      Logo, todas as pr\u00f3ximas chamadas far\u00e1 [n'-1].
+    - Se [n] for par, na primeira recurs\u00e3o
+      chama [f] considerando [n'+2], que \u00e9 sempre
+      \u00edmpar, uma vez que [S n = n] e [n] \u00e9 par.
       Logo, caindo no caso anterior.
 
     Veja alguns exemplos:
@@ -472,24 +472,24 @@ Compute (f'' 4 3).
     ...      
 
     Em resumo:
-    - [n = 0], 0 recursão
-    - [n = 1], 1 recursão
-    - [n = 2], 3 recursões
-    - [n = 3], 2 recursões
-    - [n = 4], 4 recursões
-    - [n = 5], 3 recursões
-    - [n = 6], 5 recursões
+    - [n = 0], 0 recurs\u00e3o
+    - [n = 1], 1 recurs\u00e3o
+    - [n = 2], 3 recurs\u00f5es
+    - [n = 3], 2 recurs\u00f5es
+    - [n = 4], 4 recurs\u00f5es
+    - [n = 5], 3 recurs\u00f5es
+    - [n = 6], 5 recurs\u00f5es
     
-    0, 3, 4, 5, 6, 7, ... recursões
+    0, 3, 4, 5, 6, 7, ... recurs\u00f5es
     0, 2, 4, 6, 8, 10, ... valor de [n] par
-    recursões para n = n/2 + 2, quando n > 0
-    recursões para n = 0, quando n = 0
+    recurs\u00f5es para n = n/2 + 2, quando n > 0
+    recurs\u00f5es para n = 0, quando n = 0
 
-    1, 2, 3, 4, 5, 6, ... recursões
-    1, 3, 5, 7, 9, 11, ... valor de [n] ímpar
-    recursões para n = (n+1 / 2)
+    1, 2, 3, 4, 5, 6, ... recurs\u00f5es
+    1, 3, 5, 7, 9, 11, ... valor de [n] \u00edmpar
+    recurs\u00f5es para n = (n+1 / 2)
 
-    Veja a próxima definição de [f'''].
+    Veja a pr\u00f3xima defini\u00e7\u00e3o de [f'''].
     Entenda em como esta difere de chamar
     diretamente [f''].
 *)
@@ -533,6 +533,6 @@ Proof. reflexivity. Qed.
 (** * Leitura sugerida *)
 
 (** Software Foundations: volume 1
-  - Aspectos básicos (até o final de "Data and Functions")
+  - Aspectos b\u00e1sicos (at\u00e9 o final de "Data and Functions")
   https://softwarefoundations.cis.upenn.edu/lf-current/Basics.html
 *)

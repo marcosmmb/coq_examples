@@ -1,15 +1,15 @@
-(** * Indução em Coq *)
+(** * Indu\u00e7\u00e3o em Coq *)
 
-Add LoadPath "E:\Users\mmmb\Desktop\coq".
+Add LoadPath "/Users/marcosmonteiro/desktop/coq".
 Require Export aula05_inducao.
 Module NatList.
 
 (* ############################################### *)
-(** * Pares de números *)
+(** * Pares de n\u00fameros *)
 
-(** A seguinte declaração pode ser lida como
-    "só existe uma maneira de construir um
-    par de números, que é aplicando o construtor
+(** A seguinte declara\u00e7\u00e3o pode ser lida como
+    "s\u00f3 existe uma maneira de construir um
+    par de n\u00fameros, que \u00e9 aplicando o construtor
     [pair] a dois argumentos do tipo [nat]" *)
 
 Inductive natprod : Type :=
@@ -17,8 +17,8 @@ Inductive natprod : Type :=
 
 Check (pair 3 5).
 
-(** Definindo funções para pares.
-    Observe o casamento de padrão. *)
+(** Definindo fun\u00e7\u00f5es para pares.
+    Observe o casamento de padr\u00e3o. *)
 
 Definition fst (p : natprod) : nat :=
   match p with
@@ -33,14 +33,14 @@ Definition snd (p : natprod) : nat :=
 Compute (fst (pair 3 5)).
 (* ===> 3 *)
 
-(* Definindo uma notação mais conveniente. *)
+(* Definindo uma nota\u00e7\u00e3o mais conveniente. *)
 
 Notation "( x , y )" := (pair x y).
 
 Compute (fst (3,5)).
 
-(* Observe que é possível, inclusive,
-   usar esta sintaxe no casamento de padrões. *)
+(* Observe que \u00e9 poss\u00edvel, inclusive,
+   usar esta sintaxe no casamento de padr\u00f5es. *)
 
 Definition fst' (p : natprod) : nat :=
   match p with
@@ -65,9 +65,9 @@ Proof.
   intros. simpl. reflexivity.
 Qed.
 
-(** Observe que o próximo teorema representa
-    o mesmo fato, mas [reflexivity] não
-    é suficiente para concluir esta prova. *)
+(** Observe que o pr\u00f3ximo teorema representa
+    o mesmo fato, mas [reflexivity] n\u00e3o
+    \u00e9 suficiente para concluir esta prova. *)
 
 Theorem surjective_pairing_stuck :
   forall (p : natprod),
@@ -76,9 +76,9 @@ Proof.
   simpl. (* Doesn't reduce anything! *)
 Abort.
 
-(** É preciso expor a estrutura de [p], tal
+(** \u00c9 preciso expor a estrutura de [p], tal
     que [simpl] possa realizar casamento de
-    padrão. [destruct] permite fazer isto. *)
+    padr\u00e3o. [destruct] permite fazer isto. *)
 
 Theorem surjective_pairing : forall (p : natprod),
   p = (fst p, snd p).
@@ -96,9 +96,9 @@ Proof.
 Qed.
 
 (* ############################################### *)
-(** * Lista de números *)
+(** * Lista de n\u00fameros *)
 
-(** Definição de uma lista de números. *)
+(** Defini\u00e7\u00e3o de uma lista de n\u00fameros. *)
 
 Inductive natlist : Type :=
   | nil  : natlist
@@ -108,20 +108,20 @@ Inductive natlist : Type :=
 
 Definition mylist := cons 1 (cons 2 (cons 3 nil)).
 
-(** Definindo uma notação mais conveniente. *)
+(** Definindo uma nota\u00e7\u00e3o mais conveniente. *)
 
 Notation "x :: l" := (cons x l)
                      (at level 60, right associativity).
 Notation "[ ]" := nil.
 Notation "[ x ; .. ; y ]" := (cons x .. (cons y nil) ..).
 
-(** As definições a seguir são equivalentes. *)
+(** As defini\u00e7\u00f5es a seguir s\u00e3o equivalentes. *)
 
 Definition mylist1 := 1 :: (2 :: (3 :: nil)).
 Definition mylist2 := 1 :: 2 :: 3 :: nil.
 Definition mylist3 := [1;2;3].
 
-(** Definindo funções para listas. *)
+(** Definindo fun\u00e7\u00f5es para listas. *)
 
 Fixpoint repeat (n count : nat) : natlist :=
   match count with
@@ -159,7 +159,7 @@ Example test_app3:
 [1;2;3] ++ nil = [1;2;3].
 Proof. simpl. reflexivity. Qed.
 
-(** Na definição a seguir, observe o
+(** Na defini\u00e7\u00e3o a seguir, observe o
     valor [default]. *)
 
 Definition hd (default:nat) (l:natlist) : nat :=
@@ -185,7 +185,7 @@ tl [1;2;3] = [2;3].
 Proof. simpl. reflexivity. Qed.
 
 (** **** Exercise: (list_funs)  *)
-(** Complete as definições de [nonzeros],
+(** Complete as defini\u00e7\u00f5es de [nonzeros],
     [oddmembers] e [countoddmembers]. Os testes
     mostram o comportamento esperado. *)
 
@@ -218,7 +218,7 @@ Example test_oddmembers:
 Proof. simpl. reflexivity. Qed.
 
 Definition countoddmembers (l:natlist) : nat
-(* SUBSTITUA COM ":= _sua_definição_ ." *). Admitted.
+(* SUBSTITUA COM ":= _sua_defini\u00e7\u00e3o_ ." *). Admitted.
 
 Example test_countoddmembers1:
   countoddmembers [1;0;3;1;4;5] = 4.
@@ -238,7 +238,7 @@ Example test_countoddmembers3:
 Definition bag := natlist.
 
 (** **** Exercise: (bag_functions)  *)
-(** Complete as definições de: [count], [sum],
+(** Complete as defini\u00e7\u00f5es de: [count], [sum],
     [add], e [member] para multiconjuntos (bags).
     Os testes mostram o comportamento esperado. *)
 
@@ -260,14 +260,14 @@ Example test_count2:
   count 6 [1;2;3;1;4;1] = 0.
 Proof. simpl. reflexivity. Qed.
 
-(** A operação [sum] em multiconjuntos é similar
+(** A opera\u00e7\u00e3o [sum] em multiconjuntos \u00e9 similar
     ao conceito de [union] de conjuntos: [sum a b]
-    contém todos os elementos de [a] e [b].
+    cont\u00e9m todos os elementos de [a] e [b].
 
-    Observe que a próxima definição não possui
-    nome para os parâmetros, mas somente seus tipos.
-    Além disto, a definição não é recursiva. Portanto,
-    [sum] precisa ser definida em função de definições
+    Observe que a pr\u00f3xima defini\u00e7\u00e3o n\u00e3o possui
+    nome para os par\u00e2metros, mas somente seus tipos.
+    Al\u00e9m disto, a defini\u00e7\u00e3o n\u00e3o \u00e9 recursiva. Portanto,
+    [sum] precisa ser definida em fun\u00e7\u00e3o de defini\u00e7\u00f5es
     passadas. *)
 
 Definition sum : bag -> bag -> bag := app.
@@ -286,8 +286,8 @@ Example test_add2:
   count 5 (add 1 [1;4;1]) = 0.
 Proof. simpl. reflexivity. Qed.
 
-(** Observe que a próxima definição
-    também não é recursiva. *)
+(** Observe que a pr\u00f3xima defini\u00e7\u00e3o
+    tamb\u00e9m n\u00e3o \u00e9 recursiva. *)
 
 Definition member (v:nat) (s:bag) : bool :=
   match count v s with
@@ -304,7 +304,7 @@ Example test_member2:
 Proof. simpl. reflexivity. Qed.
 
 (** **** Exercise: (bag_theorem)  *)
-(** Prove o seguinte teorema. Talvez você
+(** Prove o seguinte teorema. Talvez voc\u00ea
     precise provar um teorema auxiliar. *)
 
 
@@ -328,7 +328,7 @@ Proof.
   Print app. simpl. reflexivity.
 Qed.
 
-(** Às vezes, será preciso fazer análise de casos. *)
+(** \u00c0s vezes, ser\u00e1 preciso fazer an\u00e1lise de casos. *)
 
 Theorem tl_length_pred : forall l:natlist,
   pred (length l) = length (tl l).
@@ -342,7 +342,7 @@ Proof.
     Print length. simpl. reflexivity.
 Qed.
 
-(** Às vezes, será preciso fazer indução. *)
+(** \u00c0s vezes, ser\u00e1 preciso fazer indu\u00e7\u00e3o. *)
 
 Theorem app_assoc : forall l1 l2 l3 : natlist,
   (l1 ++ l2) ++ l3 = l1 ++ (l2 ++ l3).
@@ -355,7 +355,7 @@ Proof.
     rewrite -> IHl1'. reflexivity.
 Qed.
 
-(** Considere a seguinte definição de [rev]. *)
+(** Considere a seguinte defini\u00e7\u00e3o de [rev]. *)
 
 Fixpoint rev (l:natlist) : natlist :=
   match l with
@@ -370,7 +370,7 @@ Example test_rev2:
   rev nil = nil.
 Proof. reflexivity.  Qed.
 
-(** Vamos tentar provar a seguinte afirmação.
+(** Vamos tentar provar a seguinte afirma\u00e7\u00e3o.
     Observe que ficamos "travados" no segundo caso. *) 
 
 Theorem rev_length_firsttry : forall l : natlist,
@@ -387,7 +387,7 @@ Abort.
 (** Vamos definir um teorema auxiliar a partir
     do ponto em que ficamos "travados" no
     teorema anterior. Contudo, vamos tornar
-    o teorema auxiliar o mais geral possível:
+    o teorema auxiliar o mais geral poss\u00edvel:
     [l1] e [l2] no lugar de [rev l'] e [n]. *)
 
 Theorem app_length : forall l1 l2 : natlist,
@@ -409,7 +409,7 @@ Proof.
   - simpl. (* l = nil *)
     reflexivity.
   - (* l = cons *)
-    (* Observe o rewrite  com duas táticas *)
+    (* Observe o rewrite  com duas t\u00e1ticas *)
     simpl. rewrite -> app_length, plus_comm.
     simpl. rewrite -> IHl'. reflexivity.
 Qed.
@@ -446,8 +446,8 @@ Proof.
 Qed.
 
 (** **** Exercise: (beq_natlist)  *)
-(** Complete a definição de [beq_natlist], que
-    compara listas de números. Veja os exemplos.
+(** Complete a defini\u00e7\u00e3o de [beq_natlist], que
+    compara listas de n\u00fameros. Veja os exemplos.
     Em seguida, prove o teorema [beq_natlist_refl]. *)
 
 Fixpoint beq_natlist (l1 l2 : natlist) : bool :=
@@ -485,13 +485,13 @@ Abort.
 (* ############################################### *)
 (** * Options *)
 
-(** Considere a seguinte implementação de uma
-    função que retorna o i-ésimo elemento
+(** Considere a seguinte implementa\u00e7\u00e3o de uma
+    fun\u00e7\u00e3o que retorna o i-\u00e9simo elemento
     de uma lista. *)
 
 Fixpoint nth_bad (l:natlist) (n:nat) : nat :=
   match l with
-  | nil => 42  (* um valor arbitrário! *)
+  | nil => 42  (* um valor arbitr\u00e1rio! *)
   | a :: l' => match beq_nat n O with
                | true => a
                | false => nth_bad l' (pred n)
@@ -499,16 +499,16 @@ Fixpoint nth_bad (l:natlist) (n:nat) : nat :=
   end.
 
 (** Outra alternativa seria considerar um
-    elemento padrão -- ver definição de [hd].
+    elemento padr\u00e3o -- ver defini\u00e7\u00e3o de [hd].
 
-    Uma melhor solução é definir um "option".
+    Uma melhor solu\u00e7\u00e3o \u00e9 definir um "option".
     Similar ao conceito de "maybe" em Haskell. *)
 
 Inductive natoption : Type :=
   | Some : nat -> natoption
   | None : natoption.
 
-(** Veja agora a função [nth_error]. *)
+(** Veja agora a fun\u00e7\u00e3o [nth_error]. *)
 
 Fixpoint nth_error (l:natlist) (n:nat) : natoption :=
   match l with
@@ -530,7 +530,7 @@ Example test_nth_error3 :
 Proof. simpl. reflexivity. Qed.
 
 (** A seguir, uma outra possibilidade de
-    implementação de [nth_error] usando "if". *)
+    implementa\u00e7\u00e3o de [nth_error] usando "if". *)
 
 Fixpoint nth_error' (l:natlist) (n:nat) : natoption :=
   match l with
@@ -554,10 +554,10 @@ Definition teste_if (n m : nat) : bool :=
 
 Compute (teste_if 2 2).
 
-(** O "if" só pode ser aplicado a tipos
+(** O "if" s\u00f3 pode ser aplicado a tipos
     indutivos com dois construtores. *)
 
-(** A função a seguir retira o [nat] encapsulado
+(** A fun\u00e7\u00e3o a seguir retira o [nat] encapsulado
     no [natoption]. Observe aqui o uso do default. *)
 
 Definition option_elim (d : nat) (o : natoption) : nat :=
@@ -568,7 +568,7 @@ Definition option_elim (d : nat) (o : natoption) : nat :=
 
 (** **** Exercise: (hd_error)  *)
 (** Use a ideia do "option" e atualize
-    a definição da função [hd]. *)
+    a defini\u00e7\u00e3o da fun\u00e7\u00e3o [hd]. *)
 
 Definition hd_error (l : natlist) : natoption :=
   match l with
@@ -604,9 +604,9 @@ End NatList.
 (* ############################################### *)
 (** * Mapeamentos parciais *)
 
-(** Veja a seguinte definição de mapeamentos parciais,
+(** Veja a seguinte defini\u00e7\u00e3o de mapeamentos parciais,
     similar aos tipos map ou dictionary das
-    principais linguagens de programação.
+    principais linguagens de programa\u00e7\u00e3o.
 
     Inicialmente, definimos a "chave": o [id]. *)
 
@@ -640,12 +640,12 @@ Inductive partial_map : Type :=
     [partial_map]: usando o construtor [empty],
     representando o mapeamento vazio; usando
     o construtor [record], passando uma chave,
-    um número e um mapeamento existente.
+    um n\u00famero e um mapeamento existente.
 
-    A função [update] atualiza um mapeamento.
+    A fun\u00e7\u00e3o [update] atualiza um mapeamento.
     Observe que, conceitualmente, o valor antigo,
-    caso exista, é mantido no mapeamento. O
-    primeiro valor será o mais recente. *)
+    caso exista, \u00e9 mantido no mapeamento. O
+    primeiro valor ser\u00e1 o mais recente. *)
 
 Definition update (d : partial_map)
                   (x : id) (value : nat)
@@ -666,8 +666,8 @@ Proof.
     simpl. reflexivity.
 Qed.
 
-(** A função [find] procura por um valor em
-    um mapeamento. Se houver múltiplos mapeamentos,
+(** A fun\u00e7\u00e3o [find] procura por um valor em
+    um mapeamento. Se houver m\u00faltiplos mapeamentos,
     retorna o primeiro. *)
 
 Fixpoint find (x : id) (d : partial_map) : natoption :=
@@ -695,9 +695,9 @@ Proof.
 
 End PartialMap.
 
-(** Veja a diferença entre os dois próximos
+(** Veja a diferen\u00e7a entre os dois pr\u00f3ximos
     comandos. O segundo garante que a
-    expressão à direita da igualdade
+    express\u00e3o \u00e0 direita da igualdade
     seja igual (sintaticamente) ao
     segundo operando da soma. *)
 

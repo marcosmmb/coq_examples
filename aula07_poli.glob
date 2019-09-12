@@ -1,425 +1,425 @@
-DIGEST 2d28f5ac2400fea26a3928b9ba6d8b31
+DIGEST b3a5baa90a0628c6979573c8a645de3a
 Faula07_poli
-R130:142 aula06_listas <> <> lib
-ind 347:350 <> list
-constr 375:377 <> nil
-constr 392:395 <> cons
-R381:384 aula07_poli <> list ind
-R386:386 aula07_poli <> X var
-R400:403 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R410:413 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R414:417 aula07_poli <> list ind
-R419:419 aula07_poli <> X var
-R404:407 aula07_poli <> list ind
-R409:409 aula07_poli <> X var
-R399:399 aula07_poli <> X var
-R613:616 aula07_poli <> list ind
-R657:659 aula07_poli <> nil constr
-R661:663 Coq.Init.Datatypes <> nat ind
-R704:707 aula07_poli <> cons constr
-R716:718 aula07_poli <> nil constr
-R720:722 Coq.Init.Datatypes <> nat ind
+R146:158 aula06_listas <> <> lib
+ind 379:382 <> list
+constr 407:409 <> nil
+constr 424:427 <> cons
+R413:416 aula07_poli <> list ind
+R418:418 aula07_poli <> X var
+R432:435 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R442:445 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R446:449 aula07_poli <> list ind
+R451:451 aula07_poli <> X var
+R436:439 aula07_poli <> list ind
+R441:441 aula07_poli <> X var
+R431:431 aula07_poli <> X var
+R661:664 aula07_poli <> list ind
+R705:707 aula07_poli <> nil constr
 R709:711 Coq.Init.Datatypes <> nat ind
-R776:778 aula07_poli <> nil constr
-R828:831 aula07_poli <> cons constr
-def 947:952 <> repeat
-R970:970 aula07_poli <> X var
-R982:984 Coq.Init.Datatypes <> nat ind
-R989:992 aula07_poli <> list ind
-R994:994 aula07_poli <> X var
-R1007:1011 aula07_poli <> count var
-R1027:1029 aula07_poli <> nil constr
-R1031:1031 aula07_poli <> X var
-R1037:1037 Coq.Init.Datatypes <> S constr
-R1049:1052 aula07_poli <> cons constr
-R1059:1064 aula07_poli <> repeat def
-R1068:1068 aula07_poli <> x var
-R1066:1066 aula07_poli <> X var
-R1056:1056 aula07_poli <> x var
+R752:755 aula07_poli <> cons constr
+R764:766 aula07_poli <> nil constr
+R768:770 Coq.Init.Datatypes <> nat ind
+R757:759 Coq.Init.Datatypes <> nat ind
+R824:826 aula07_poli <> nil constr
+R876:879 aula07_poli <> cons constr
+def 1007:1012 <> repeat
+R1030:1030 aula07_poli <> X var
+R1042:1044 Coq.Init.Datatypes <> nat ind
+R1049:1052 aula07_poli <> list ind
 R1054:1054 aula07_poli <> X var
-def 1094:1105 <> test_repeat1
-R1125:1129 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R1111:1116 aula07_poli <> repeat def
-R1118:1120 Coq.Init.Datatypes <> nat ind
-R1130:1133 aula07_poli <> cons constr
-R1142:1145 aula07_poli <> cons constr
-R1154:1156 aula07_poli <> nil constr
-R1158:1160 Coq.Init.Datatypes <> nat ind
-R1147:1149 Coq.Init.Datatypes <> nat ind
-R1135:1137 Coq.Init.Datatypes <> nat ind
-def 1200:1211 <> test_repeat2
-R1236:1240 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R1217:1222 aula07_poli <> repeat def
-R1229:1233 aula03_gallina <> false constr
-R1224:1227 aula03_gallina <> bool ind
-R1241:1244 aula07_poli <> cons constr
-R1258:1260 aula07_poli <> nil constr
-R1262:1265 aula03_gallina <> bool ind
-R1251:1255 aula03_gallina <> false constr
-R1246:1249 aula03_gallina <> bool ind
-def 1353:1359 <> repeat'
-R1373:1376 aula07_poli <> list ind
-R1378:1378 aula07_poli <> X var
-R1391:1395 aula07_poli <> count var
-R1418:1420 aula07_poli <> nil constr
-R1422:1422 aula07_poli <> X var
-R1428:1428 Coq.Init.Datatypes <> S constr
-R1440:1443 aula07_poli <> cons constr
-R1450:1456 aula07_poli <> repeat' def
-R1460:1460 aula07_poli <> x var
-R1458:1458 aula07_poli <> X var
-R1447:1447 aula07_poli <> x var
-R1445:1445 aula07_poli <> X var
-R1484:1490 aula07_poli <> repeat' def
-R1546:1551 aula07_poli <> repeat def
-def 1865:1872 <> repeat''
-R1886:1889 aula07_poli <> list ind
-R1891:1891 aula07_poli <> X var
-R1904:1908 aula07_poli <> count var
-R1931:1933 aula07_poli <> nil constr
-R1941:1941 Coq.Init.Datatypes <> S constr
-R1953:1956 aula07_poli <> cons constr
-R1963:1970 aula07_poli <> repeat'' def
-R1974:1974 aula07_poli <> x var
-R1960:1960 aula07_poli <> x var
-R2296:2298 aula07_poli <> nil constr
-R2296:2298 aula07_poli <> nil constr
-R2315:2318 aula07_poli <> cons constr
-R2315:2318 aula07_poli <> cons constr
-R2339:2344 aula07_poli <> repeat def
-R2339:2344 aula07_poli <> repeat def
-def 2419:2427 <> list123''
-R2432:2435 aula07_poli <> cons constr
-R2440:2443 aula07_poli <> cons constr
-R2448:2451 aula07_poli <> cons constr
-R2455:2457 aula07_poli <> nil constr
-def 2553:2561 <> repeat'''
-R2579:2579 aula07_poli <> X var
-R2591:2593 Coq.Init.Datatypes <> nat ind
-R2598:2601 aula07_poli <> list ind
-R2603:2603 aula07_poli <> X var
-R2616:2620 aula07_poli <> count var
-R2643:2645 aula07_poli <> nil constr
-R2651:2651 Coq.Init.Datatypes <> S constr
-R2663:2666 aula07_poli <> cons constr
-R2671:2679 aula07_poli <> repeat''' def
-R2681:2681 aula07_poli <> x var
-R2668:2668 aula07_poli <> x var
-def 3008:3012 <> mynil
-R3017:3019 aula07_poli <> nil constr
-def 3136:3140 <> mynil
-R3144:3147 aula07_poli <> list ind
-R3149:3151 Coq.Init.Datatypes <> nat ind
-R3156:3158 aula07_poli <> nil constr
-R3169:3171 aula07_poli <> nil constr
-def 3185:3190 <> mynil'
-R3196:3198 aula07_poli <> nil constr
-R3200:3202 Coq.Init.Datatypes <> nat ind
-def 3267:3269 <> app
-R3291:3294 aula07_poli <> list ind
-R3296:3296 aula07_poli <> X var
-R3315:3318 aula07_poli <> list ind
-R3320:3320 aula07_poli <> X var
-R3334:3335 aula07_poli <> l1 var
-R3346:3348 aula07_poli <> nil constr
-R3358:3359 aula07_poli <> l2 var
-R3365:3368 aula07_poli <> cons constr
-R3377:3380 aula07_poli <> cons constr
-R3385:3387 aula07_poli <> app def
-R3391:3392 aula07_poli <> l2 var
-def 3412:3414 <> rev
-R3428:3431 aula07_poli <> list ind
-R3433:3433 aula07_poli <> X var
-R3438:3441 aula07_poli <> list ind
-R3443:3443 aula07_poli <> X var
-R3456:3456 aula07_poli <> l var
-R3467:3469 aula07_poli <> nil constr
-R3479:3481 aula07_poli <> nil constr
-R3487:3490 aula07_poli <> cons constr
-R3499:3501 aula07_poli <> app def
-R3512:3515 aula07_poli <> cons constr
-R3519:3521 aula07_poli <> nil constr
-R3504:3506 aula07_poli <> rev def
-def 3541:3546 <> length
-R3564:3567 aula07_poli <> list ind
-R3569:3569 aula07_poli <> X var
-R3574:3576 Coq.Init.Datatypes <> nat ind
-R3589:3589 aula07_poli <> l var
-R3600:3602 aula07_poli <> nil constr
-R3613:3616 aula07_poli <> cons constr
-R3626:3626 Coq.Init.Datatypes <> S constr
-R3629:3634 aula07_poli <> length def
-def 3656:3664 <> test_rev1
-R3695:3700 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R3720:3720 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R3670:3672 aula07_poli <> rev def
-R3675:3678 aula07_poli <> cons constr
-R3683:3686 aula07_poli <> cons constr
-R3690:3692 aula07_poli <> nil constr
-R3701:3704 aula07_poli <> cons constr
-R3709:3712 aula07_poli <> cons constr
-R3716:3718 aula07_poli <> nil constr
-def 3758:3766 <> test_rev2
-R3790:3794 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R3771:3773 aula07_poli <> rev def
-R3776:3779 aula07_poli <> cons constr
-R3786:3788 aula07_poli <> nil constr
-R3781:3784 aula03_gallina <> true constr
-R3795:3798 aula07_poli <> cons constr
-R3805:3807 aula07_poli <> nil constr
-R3800:3803 aula03_gallina <> true constr
-def 3845:3856 <> test_length1
-R3898:3900 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R3861:3866 aula07_poli <> length def
-R3869:3872 aula07_poli <> cons constr
-R3877:3880 aula07_poli <> cons constr
-R3885:3888 aula07_poli <> cons constr
-R3892:3894 aula07_poli <> nil constr
-R4008:4011 aula07_poli <> cons constr
-not 3995:3995 <> :::x_'::'_x
-R4093:4095 aula07_poli <> nil constr
-not 4084:4084 <> :::'['_']'
-R4128:4131 aula07_poli <> cons constr
-R4139:4142 aula07_poli <> cons constr
-R4146:4147 aula07_poli <> :::'['_']' not
-not 4107:4107 <> :::'['_x_';'_'..'_';'_x_']'
-R4177:4179 aula07_poli <> app def
-not 4164:4164 <> :::x_'++'_x
-def 4313:4322 <> list123'''
-R4327:4327 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
-R4329:4330 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
-R4332:4333 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
-R4335:4335 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
-R4345:4354 aula07_poli <> list123''' def
-prf 4444:4452 <> app_nil_r
-R4482:4485 aula07_poli <> list ind
-R4487:4487 aula07_poli <> X var
-R4499:4501 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R4493:4496 aula07_poli <> :::x_'++'_x not
-R4492:4492 aula07_poli <> l var
-R4497:4498 aula07_poli <> :::'['_']' not
-R4502:4502 aula07_poli <> l var
-prf 4553:4561 <> app_assoc
-R4581:4584 aula07_poli <> list ind
-R4586:4586 aula07_poli <> A var
-R4603:4605 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R4593:4596 aula07_poli <> :::x_'++'_x not
-R4592:4592 aula07_poli <> l var
-R4598:4601 aula07_poli <> :::x_'++'_x not
-R4597:4597 aula07_poli <> m var
-R4602:4602 aula07_poli <> n var
-R4606:4606 aula07_poli <> :::x_'++'_x not
-R4613:4617 aula07_poli <> :::x_'++'_x not
-R4608:4611 aula07_poli <> :::x_'++'_x not
-R4607:4607 aula07_poli <> l var
-R4612:4612 aula07_poli <> m var
-R4618:4618 aula07_poli <> n var
-prf 4667:4676 <> app_length
-R4705:4708 aula07_poli <> list ind
-R4710:4710 aula07_poli <> X var
-R4733:4735 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R4716:4721 aula07_poli <> length def
-R4726:4729 aula07_poli <> :::x_'++'_x not
-R4724:4725 aula07_poli <> l1 var
-R4730:4731 aula07_poli <> l2 var
-R4745:4747 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
-R4736:4741 aula07_poli <> length def
-R4743:4744 aula07_poli <> l1 var
-R4748:4753 aula07_poli <> length def
-R4755:4756 aula07_poli <> l2 var
-ind 4893:4896 <> prod
-constr 4923:4926 <> pair
-R4931:4934 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R4936:4939 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R4940:4943 aula07_poli <> prod ind
-R4947:4947 aula07_poli <> Y var
-R4945:4945 aula07_poli <> X var
-R4935:4935 aula07_poli <> Y var
-R4930:4930 aula07_poli <> X var
-R4961:4964 aula07_poli <> pair constr
-R4961:4964 aula07_poli <> pair constr
-R5005:5008 aula07_poli <> pair constr
-not 4989:4989 <> :::'('_x_','_x_')'
-R5037:5040 aula07_poli <> prod ind
-not 5025:5025 <> ::type_scope:x_'*'_x
-def 5272:5274 <> fst
-R5295:5297 aula07_poli <> ::type_scope:x_'*'_x not
-R5294:5294 aula07_poli <> X var
-R5298:5298 aula07_poli <> Y var
-R5303:5303 aula07_poli <> X var
-R5316:5316 aula07_poli <> p var
-R5327:5327 aula07_poli <> :::'('_x_','_x_')' not
-R5329:5330 aula07_poli <> :::'('_x_','_x_')' not
-R5332:5332 aula07_poli <> :::'('_x_','_x_')' not
-def 5358:5360 <> snd
-R5381:5383 aula07_poli <> ::type_scope:x_'*'_x not
-R5380:5380 aula07_poli <> X var
-R5384:5384 aula07_poli <> Y var
-R5389:5389 aula07_poli <> Y var
-R5402:5402 aula07_poli <> p var
-R5413:5413 aula07_poli <> :::'('_x_','_x_')' not
-R5415:5416 aula07_poli <> :::'('_x_','_x_')' not
-R5418:5418 aula07_poli <> :::'('_x_','_x_')' not
-def 5494:5500 <> combine
-R5521:5524 aula07_poli <> list ind
-R5526:5526 aula07_poli <> X var
-R5535:5538 aula07_poli <> list ind
-R5540:5540 aula07_poli <> Y var
-R5556:5559 aula07_poli <> list ind
-R5563:5563 aula07_poli <> ::type_scope:x_'*'_x not
-R5562:5562 aula07_poli <> X var
-R5564:5564 aula07_poli <> Y var
-R5582:5583 aula07_poli <> ly var
-R5578:5579 aula07_poli <> lx var
-R5594:5595 aula07_poli <> :::'['_']' not
-R5603:5604 aula07_poli <> :::'['_']' not
-R5613:5614 aula07_poli <> :::'['_']' not
-R5619:5620 aula07_poli <> :::'['_']' not
-R5627:5630 aula07_poli <> :::x_'::'_x not
-R5636:5639 aula07_poli <> :::x_'::'_x not
-R5652:5656 aula07_poli <> :::x_'::'_x not
-R5670:5670 aula07_poli <> :::x_'::'_x not
-R5646:5646 aula07_poli <> :::'('_x_','_x_')' not
-R5648:5649 aula07_poli <> :::'('_x_','_x_')' not
-R5651:5651 aula07_poli <> :::'('_x_','_x_')' not
-R5657:5663 aula07_poli <> combine def
-def 5688:5700 <> combine_test1
-R5728:5732 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R5706:5712 aula07_poli <> combine def
-R5722:5722 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
-R5724:5724 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
-R5727:5727 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
-R5714:5714 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
-R5716:5716 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
-R5718:5718 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
-R5720:5720 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
-R5733:5733 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
-R5739:5739 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
-R5746:5746 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
-R5734:5734 aula07_poli <> :::'('_x_','_x_')' not
-R5736:5736 aula07_poli <> :::'('_x_','_x_')' not
-R5738:5738 aula07_poli <> :::'('_x_','_x_')' not
-R5740:5740 aula07_poli <> :::'('_x_','_x_')' not
-R5742:5742 aula07_poli <> :::'('_x_','_x_')' not
-R5745:5745 aula07_poli <> :::'('_x_','_x_')' not
-def 5932:5936 <> split
-R5956:5959 aula07_poli <> list ind
-R5963:5963 aula07_poli <> ::type_scope:x_'*'_x not
-R5962:5962 aula07_poli <> X var
-R5964:5964 aula07_poli <> Y var
-R5985:5985 aula07_poli <> ::type_scope:x_'*'_x not
-R5992:5996 aula07_poli <> ::type_scope:x_'*'_x not
-R6003:6003 aula07_poli <> ::type_scope:x_'*'_x not
-R5986:5989 aula07_poli <> list ind
-R5991:5991 aula07_poli <> X var
-R5997:6000 aula07_poli <> list ind
-R6002:6002 aula07_poli <> Y var
-def 6070:6079 <> test_split
-R6111:6115 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R6084:6088 aula07_poli <> split prfax
-R6090:6090 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
-R6100:6100 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
-R6110:6110 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
-R6091:6091 aula07_poli <> :::'('_x_','_x_')' not
-R6093:6093 aula07_poli <> :::'('_x_','_x_')' not
-R6099:6099 aula07_poli <> :::'('_x_','_x_')' not
-R6094:6098 aula03_gallina <> false constr
-R6101:6101 aula07_poli <> :::'('_x_','_x_')' not
-R6103:6103 aula07_poli <> :::'('_x_','_x_')' not
-R6109:6109 aula07_poli <> :::'('_x_','_x_')' not
-R6104:6108 aula03_gallina <> false constr
-R6116:6116 aula07_poli <> :::'('_x_','_x_')' not
-R6122:6122 aula07_poli <> :::'('_x_','_x_')' not
-R6136:6136 aula07_poli <> :::'('_x_','_x_')' not
-R6117:6117 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
-R6119:6119 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
-R6121:6121 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
-R6123:6123 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
-R6129:6129 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
-R6135:6135 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
-R6124:6128 aula03_gallina <> false constr
-R6130:6134 aula03_gallina <> false constr
-ind 6273:6278 <> option
-constr 6303:6306 <> Some
-constr 6328:6331 <> None
-R6311:6314 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R6315:6320 aula07_poli <> option ind
-R6322:6322 aula07_poli <> X var
-R6310:6310 aula07_poli <> X var
-R6335:6340 aula07_poli <> option ind
-R6342:6342 aula07_poli <> X var
-R6356:6359 aula07_poli <> Some constr
-R6356:6359 aula07_poli <> Some constr
-R6378:6381 aula07_poli <> None constr
-R6378:6381 aula07_poli <> None constr
-def 6432:6440 <> nth_error
-R6458:6461 aula07_poli <> list ind
-R6463:6463 aula07_poli <> X var
-R6471:6473 Coq.Init.Datatypes <> nat ind
-R6497:6502 aula07_poli <> option ind
-R6504:6504 aula07_poli <> X var
-R6517:6517 aula07_poli <> l var
-R6528:6529 aula07_poli <> :::'['_']' not
-R6534:6537 aula07_poli <> None constr
-R6544:6547 aula07_poli <> :::x_'::'_x not
-R6557:6563 aula03_gallina <> beq_nat def
-R6567:6567 Coq.Init.Datatypes <> O constr
-R6565:6565 aula07_poli <> n var
-R6601:6609 aula07_poli <> nth_error def
-R6615:6618 Coq.Init.Peano <> pred syndef
-R6620:6620 aula07_poli <> n var
-R6574:6577 aula07_poli <> Some constr
-def 6639:6653 <> test_nth_error1
-R6680:6682 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R6659:6667 aula07_poli <> nth_error def
-R6669:6669 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
-R6671:6671 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
-R6673:6673 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
-R6675:6675 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
-R6677:6677 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
-R6683:6686 aula07_poli <> Some constr
-def 6724:6738 <> test_nth_error2
-R6765:6767 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R6744:6752 aula07_poli <> nth_error def
-R6754:6754 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
-R6758:6758 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
-R6762:6762 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
-R6755:6755 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
-R6757:6757 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
-R6759:6759 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
-R6761:6761 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
-R6768:6771 aula07_poli <> Some constr
-R6773:6773 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
-R6775:6775 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
-def 6811:6825 <> test_nth_error3
-R6849:6851 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R6831:6839 aula07_poli <> nth_error def
-R6841:6841 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
-R6846:6846 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
-R6842:6845 aula03_gallina <> true constr
-R6852:6855 aula07_poli <> None constr
-def 7006:7013 <> hd_error
-R7031:7034 aula07_poli <> list ind
-R7036:7036 aula07_poli <> X var
-R7052:7057 aula07_poli <> option ind
-R7059:7059 aula07_poli <> X var
-def 7126:7139 <> test_hd_error1
-R7159:7161 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R7145:7152 aula07_poli <> hd_error prfax
-R7154:7154 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
-R7156:7156 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
-R7158:7158 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
-R7162:7165 aula07_poli <> Some constr
-def 7216:7229 <> test_hd_error2
-R7252:7255 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R7233:7240 aula07_poli <> hd_error prfax
-R7243:7243 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
-R7247:7247 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
-R7251:7251 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
-R7244:7244 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
-R7246:7246 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
-R7248:7248 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
-R7250:7250 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
-R7256:7259 aula07_poli <> Some constr
-R7261:7261 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
-R7263:7263 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
+R1067:1071 aula07_poli <> count var
+R1087:1089 aula07_poli <> nil constr
+R1091:1091 aula07_poli <> X var
+R1097:1097 Coq.Init.Datatypes <> S constr
+R1109:1112 aula07_poli <> cons constr
+R1119:1124 aula07_poli <> repeat def
+R1128:1128 aula07_poli <> x var
+R1126:1126 aula07_poli <> X var
+R1116:1116 aula07_poli <> x var
+R1114:1114 aula07_poli <> X var
+def 1154:1165 <> test_repeat1
+R1185:1189 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1171:1176 aula07_poli <> repeat def
+R1178:1180 Coq.Init.Datatypes <> nat ind
+R1190:1193 aula07_poli <> cons constr
+R1202:1205 aula07_poli <> cons constr
+R1214:1216 aula07_poli <> nil constr
+R1218:1220 Coq.Init.Datatypes <> nat ind
+R1207:1209 Coq.Init.Datatypes <> nat ind
+R1195:1197 Coq.Init.Datatypes <> nat ind
+def 1260:1271 <> test_repeat2
+R1296:1300 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1277:1282 aula07_poli <> repeat def
+R1289:1293 aula03_gallina <> false constr
+R1284:1287 aula03_gallina <> bool ind
+R1301:1304 aula07_poli <> cons constr
+R1318:1320 aula07_poli <> nil constr
+R1322:1325 aula03_gallina <> bool ind
+R1311:1315 aula03_gallina <> false constr
+R1306:1309 aula03_gallina <> bool ind
+def 1417:1423 <> repeat'
+R1437:1440 aula07_poli <> list ind
+R1442:1442 aula07_poli <> X var
+R1455:1459 aula07_poli <> count var
+R1482:1484 aula07_poli <> nil constr
+R1486:1486 aula07_poli <> X var
+R1492:1492 Coq.Init.Datatypes <> S constr
+R1504:1507 aula07_poli <> cons constr
+R1514:1520 aula07_poli <> repeat' def
+R1524:1524 aula07_poli <> x var
+R1522:1522 aula07_poli <> X var
+R1511:1511 aula07_poli <> x var
+R1509:1509 aula07_poli <> X var
+R1548:1554 aula07_poli <> repeat' def
+R1610:1615 aula07_poli <> repeat def
+def 1965:1972 <> repeat''
+R1986:1989 aula07_poli <> list ind
+R1991:1991 aula07_poli <> X var
+R2004:2008 aula07_poli <> count var
+R2031:2033 aula07_poli <> nil constr
+R2041:2041 Coq.Init.Datatypes <> S constr
+R2053:2056 aula07_poli <> cons constr
+R2063:2070 aula07_poli <> repeat'' def
+R2074:2074 aula07_poli <> x var
+R2060:2060 aula07_poli <> x var
+R2432:2434 aula07_poli <> nil constr
+R2432:2434 aula07_poli <> nil constr
+R2451:2454 aula07_poli <> cons constr
+R2451:2454 aula07_poli <> cons constr
+R2475:2480 aula07_poli <> repeat def
+R2475:2480 aula07_poli <> repeat def
+def 2563:2571 <> list123''
+R2576:2579 aula07_poli <> cons constr
+R2584:2587 aula07_poli <> cons constr
+R2592:2595 aula07_poli <> cons constr
+R2599:2601 aula07_poli <> nil constr
+def 2729:2737 <> repeat'''
+R2755:2755 aula07_poli <> X var
+R2767:2769 Coq.Init.Datatypes <> nat ind
+R2774:2777 aula07_poli <> list ind
+R2779:2779 aula07_poli <> X var
+R2792:2796 aula07_poli <> count var
+R2819:2821 aula07_poli <> nil constr
+R2827:2827 Coq.Init.Datatypes <> S constr
+R2839:2842 aula07_poli <> cons constr
+R2847:2855 aula07_poli <> repeat''' def
+R2857:2857 aula07_poli <> x var
+R2844:2844 aula07_poli <> x var
+def 3228:3232 <> mynil
+R3237:3239 aula07_poli <> nil constr
+def 3364:3368 <> mynil
+R3372:3375 aula07_poli <> list ind
+R3377:3379 Coq.Init.Datatypes <> nat ind
+R3384:3386 aula07_poli <> nil constr
+R3397:3399 aula07_poli <> nil constr
+def 3413:3418 <> mynil'
+R3424:3426 aula07_poli <> nil constr
+R3428:3430 Coq.Init.Datatypes <> nat ind
+def 3507:3509 <> app
+R3531:3534 aula07_poli <> list ind
+R3536:3536 aula07_poli <> X var
+R3555:3558 aula07_poli <> list ind
+R3560:3560 aula07_poli <> X var
+R3574:3575 aula07_poli <> l1 var
+R3586:3588 aula07_poli <> nil constr
+R3598:3599 aula07_poli <> l2 var
+R3605:3608 aula07_poli <> cons constr
+R3617:3620 aula07_poli <> cons constr
+R3625:3627 aula07_poli <> app def
+R3631:3632 aula07_poli <> l2 var
+def 3652:3654 <> rev
+R3668:3671 aula07_poli <> list ind
+R3673:3673 aula07_poli <> X var
+R3678:3681 aula07_poli <> list ind
+R3683:3683 aula07_poli <> X var
+R3696:3696 aula07_poli <> l var
+R3707:3709 aula07_poli <> nil constr
+R3719:3721 aula07_poli <> nil constr
+R3727:3730 aula07_poli <> cons constr
+R3739:3741 aula07_poli <> app def
+R3752:3755 aula07_poli <> cons constr
+R3759:3761 aula07_poli <> nil constr
+R3744:3746 aula07_poli <> rev def
+def 3781:3786 <> length
+R3804:3807 aula07_poli <> list ind
+R3809:3809 aula07_poli <> X var
+R3814:3816 Coq.Init.Datatypes <> nat ind
+R3829:3829 aula07_poli <> l var
+R3840:3842 aula07_poli <> nil constr
+R3853:3856 aula07_poli <> cons constr
+R3866:3866 Coq.Init.Datatypes <> S constr
+R3869:3874 aula07_poli <> length def
+def 3896:3904 <> test_rev1
+R3935:3940 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3960:3960 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3910:3912 aula07_poli <> rev def
+R3915:3918 aula07_poli <> cons constr
+R3923:3926 aula07_poli <> cons constr
+R3930:3932 aula07_poli <> nil constr
+R3941:3944 aula07_poli <> cons constr
+R3949:3952 aula07_poli <> cons constr
+R3956:3958 aula07_poli <> nil constr
+def 3998:4006 <> test_rev2
+R4030:4034 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4011:4013 aula07_poli <> rev def
+R4016:4019 aula07_poli <> cons constr
+R4026:4028 aula07_poli <> nil constr
+R4021:4024 aula03_gallina <> true constr
+R4035:4038 aula07_poli <> cons constr
+R4045:4047 aula07_poli <> nil constr
+R4040:4043 aula03_gallina <> true constr
+def 4085:4096 <> test_length1
+R4138:4140 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4101:4106 aula07_poli <> length def
+R4109:4112 aula07_poli <> cons constr
+R4117:4120 aula07_poli <> cons constr
+R4125:4128 aula07_poli <> cons constr
+R4132:4134 aula07_poli <> nil constr
+R4248:4251 aula07_poli <> cons constr
+not 4235:4235 <> :::x_'::'_x
+R4333:4335 aula07_poli <> nil constr
+not 4324:4324 <> :::'['_']'
+R4368:4371 aula07_poli <> cons constr
+R4379:4382 aula07_poli <> cons constr
+R4386:4387 aula07_poli <> :::'['_']' not
+not 4347:4347 <> :::'['_x_';'_'..'_';'_x_']'
+R4417:4419 aula07_poli <> app def
+not 4404:4404 <> :::x_'++'_x
+def 4553:4562 <> list123'''
+R4567:4567 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
+R4569:4570 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
+R4572:4573 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
+R4575:4575 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
+R4585:4594 aula07_poli <> list123''' def
+prf 4684:4692 <> app_nil_r
+R4722:4725 aula07_poli <> list ind
+R4727:4727 aula07_poli <> X var
+R4739:4741 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4733:4736 aula07_poli <> :::x_'++'_x not
+R4732:4732 aula07_poli <> l var
+R4737:4738 aula07_poli <> :::'['_']' not
+R4742:4742 aula07_poli <> l var
+prf 4793:4801 <> app_assoc
+R4821:4824 aula07_poli <> list ind
+R4826:4826 aula07_poli <> A var
+R4843:4845 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4833:4836 aula07_poli <> :::x_'++'_x not
+R4832:4832 aula07_poli <> l var
+R4838:4841 aula07_poli <> :::x_'++'_x not
+R4837:4837 aula07_poli <> m var
+R4842:4842 aula07_poli <> n var
+R4846:4846 aula07_poli <> :::x_'++'_x not
+R4853:4857 aula07_poli <> :::x_'++'_x not
+R4848:4851 aula07_poli <> :::x_'++'_x not
+R4847:4847 aula07_poli <> l var
+R4852:4852 aula07_poli <> m var
+R4858:4858 aula07_poli <> n var
+prf 4907:4916 <> app_length
+R4945:4948 aula07_poli <> list ind
+R4950:4950 aula07_poli <> X var
+R4973:4975 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4956:4961 aula07_poli <> length def
+R4966:4969 aula07_poli <> :::x_'++'_x not
+R4964:4965 aula07_poli <> l1 var
+R4970:4971 aula07_poli <> l2 var
+R4985:4987 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R4976:4981 aula07_poli <> length def
+R4983:4984 aula07_poli <> l1 var
+R4988:4993 aula07_poli <> length def
+R4995:4996 aula07_poli <> l2 var
+ind 5137:5140 <> prod
+constr 5167:5170 <> pair
+R5175:5178 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5180:5183 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5184:5187 aula07_poli <> prod ind
+R5191:5191 aula07_poli <> Y var
+R5189:5189 aula07_poli <> X var
+R5179:5179 aula07_poli <> Y var
+R5174:5174 aula07_poli <> X var
+R5205:5208 aula07_poli <> pair constr
+R5205:5208 aula07_poli <> pair constr
+R5249:5252 aula07_poli <> pair constr
+not 5233:5233 <> :::'('_x_','_x_')'
+R5281:5284 aula07_poli <> prod ind
+not 5269:5269 <> ::type_scope:x_'*'_x
+def 5560:5562 <> fst
+R5583:5585 aula07_poli <> ::type_scope:x_'*'_x not
+R5582:5582 aula07_poli <> X var
+R5586:5586 aula07_poli <> Y var
+R5591:5591 aula07_poli <> X var
+R5604:5604 aula07_poli <> p var
+R5615:5615 aula07_poli <> :::'('_x_','_x_')' not
+R5617:5618 aula07_poli <> :::'('_x_','_x_')' not
+R5620:5620 aula07_poli <> :::'('_x_','_x_')' not
+def 5646:5648 <> snd
+R5669:5671 aula07_poli <> ::type_scope:x_'*'_x not
+R5668:5668 aula07_poli <> X var
+R5672:5672 aula07_poli <> Y var
+R5677:5677 aula07_poli <> Y var
+R5690:5690 aula07_poli <> p var
+R5701:5701 aula07_poli <> :::'('_x_','_x_')' not
+R5703:5704 aula07_poli <> :::'('_x_','_x_')' not
+R5706:5706 aula07_poli <> :::'('_x_','_x_')' not
+def 5790:5796 <> combine
+R5817:5820 aula07_poli <> list ind
+R5822:5822 aula07_poli <> X var
+R5831:5834 aula07_poli <> list ind
+R5836:5836 aula07_poli <> Y var
+R5852:5855 aula07_poli <> list ind
+R5859:5859 aula07_poli <> ::type_scope:x_'*'_x not
+R5858:5858 aula07_poli <> X var
+R5860:5860 aula07_poli <> Y var
+R5878:5879 aula07_poli <> ly var
+R5874:5875 aula07_poli <> lx var
+R5890:5891 aula07_poli <> :::'['_']' not
+R5899:5900 aula07_poli <> :::'['_']' not
+R5909:5910 aula07_poli <> :::'['_']' not
+R5915:5916 aula07_poli <> :::'['_']' not
+R5923:5926 aula07_poli <> :::x_'::'_x not
+R5932:5935 aula07_poli <> :::x_'::'_x not
+R5948:5952 aula07_poli <> :::x_'::'_x not
+R5966:5966 aula07_poli <> :::x_'::'_x not
+R5942:5942 aula07_poli <> :::'('_x_','_x_')' not
+R5944:5945 aula07_poli <> :::'('_x_','_x_')' not
+R5947:5947 aula07_poli <> :::'('_x_','_x_')' not
+R5953:5959 aula07_poli <> combine def
+def 5984:5996 <> combine_test1
+R6024:6028 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6002:6008 aula07_poli <> combine def
+R6018:6018 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
+R6020:6020 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
+R6023:6023 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
+R6010:6010 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
+R6012:6012 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
+R6014:6014 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
+R6016:6016 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
+R6029:6029 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
+R6035:6035 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
+R6042:6042 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
+R6030:6030 aula07_poli <> :::'('_x_','_x_')' not
+R6032:6032 aula07_poli <> :::'('_x_','_x_')' not
+R6034:6034 aula07_poli <> :::'('_x_','_x_')' not
+R6036:6036 aula07_poli <> :::'('_x_','_x_')' not
+R6038:6038 aula07_poli <> :::'('_x_','_x_')' not
+R6041:6041 aula07_poli <> :::'('_x_','_x_')' not
+def 6240:6244 <> split
+R6264:6267 aula07_poli <> list ind
+R6271:6271 aula07_poli <> ::type_scope:x_'*'_x not
+R6270:6270 aula07_poli <> X var
+R6272:6272 aula07_poli <> Y var
+R6293:6293 aula07_poli <> ::type_scope:x_'*'_x not
+R6300:6304 aula07_poli <> ::type_scope:x_'*'_x not
+R6311:6311 aula07_poli <> ::type_scope:x_'*'_x not
+R6294:6297 aula07_poli <> list ind
+R6299:6299 aula07_poli <> X var
+R6305:6308 aula07_poli <> list ind
+R6310:6310 aula07_poli <> Y var
+def 6386:6395 <> test_split
+R6427:6431 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6400:6404 aula07_poli <> split prfax
+R6406:6406 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
+R6416:6416 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
+R6426:6426 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
+R6407:6407 aula07_poli <> :::'('_x_','_x_')' not
+R6409:6409 aula07_poli <> :::'('_x_','_x_')' not
+R6415:6415 aula07_poli <> :::'('_x_','_x_')' not
+R6410:6414 aula03_gallina <> false constr
+R6417:6417 aula07_poli <> :::'('_x_','_x_')' not
+R6419:6419 aula07_poli <> :::'('_x_','_x_')' not
+R6425:6425 aula07_poli <> :::'('_x_','_x_')' not
+R6420:6424 aula03_gallina <> false constr
+R6432:6432 aula07_poli <> :::'('_x_','_x_')' not
+R6438:6438 aula07_poli <> :::'('_x_','_x_')' not
+R6452:6452 aula07_poli <> :::'('_x_','_x_')' not
+R6433:6433 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
+R6435:6435 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
+R6437:6437 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
+R6439:6439 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
+R6445:6445 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
+R6451:6451 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
+R6440:6444 aula03_gallina <> false constr
+R6446:6450 aula03_gallina <> false constr
+ind 6593:6598 <> option
+constr 6623:6626 <> Some
+constr 6648:6651 <> None
+R6631:6634 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6635:6640 aula07_poli <> option ind
+R6642:6642 aula07_poli <> X var
+R6630:6630 aula07_poli <> X var
+R6655:6660 aula07_poli <> option ind
+R6662:6662 aula07_poli <> X var
+R6676:6679 aula07_poli <> Some constr
+R6676:6679 aula07_poli <> Some constr
+R6698:6701 aula07_poli <> None constr
+R6698:6701 aula07_poli <> None constr
+def 6752:6760 <> nth_error
+R6778:6781 aula07_poli <> list ind
+R6783:6783 aula07_poli <> X var
+R6791:6793 Coq.Init.Datatypes <> nat ind
+R6817:6822 aula07_poli <> option ind
+R6824:6824 aula07_poli <> X var
+R6837:6837 aula07_poli <> l var
+R6848:6849 aula07_poli <> :::'['_']' not
+R6854:6857 aula07_poli <> None constr
+R6864:6867 aula07_poli <> :::x_'::'_x not
+R6877:6883 aula03_gallina <> beq_nat def
+R6887:6887 Coq.Init.Datatypes <> O constr
+R6885:6885 aula07_poli <> n var
+R6921:6929 aula07_poli <> nth_error def
+R6935:6938 Coq.Init.Peano <> pred syndef
+R6940:6940 aula07_poli <> n var
+R6894:6897 aula07_poli <> Some constr
+def 6959:6973 <> test_nth_error1
+R7000:7002 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6979:6987 aula07_poli <> nth_error def
+R6989:6989 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
+R6991:6991 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
+R6993:6993 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
+R6995:6995 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
+R6997:6997 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
+R7003:7006 aula07_poli <> Some constr
+def 7044:7058 <> test_nth_error2
+R7085:7087 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R7064:7072 aula07_poli <> nth_error def
+R7074:7074 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
+R7078:7078 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
+R7082:7082 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
+R7075:7075 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
+R7077:7077 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
+R7079:7079 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
+R7081:7081 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
+R7088:7091 aula07_poli <> Some constr
+R7093:7093 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
+R7095:7095 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
+def 7131:7145 <> test_nth_error3
+R7169:7171 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R7151:7159 aula07_poli <> nth_error def
+R7161:7161 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
+R7166:7166 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
+R7162:7165 aula03_gallina <> true constr
+R7172:7175 aula07_poli <> None constr
+def 7346:7353 <> hd_error
+R7371:7374 aula07_poli <> list ind
+R7376:7376 aula07_poli <> X var
+R7392:7397 aula07_poli <> option ind
+R7399:7399 aula07_poli <> X var
+def 7474:7487 <> test_hd_error1
+R7507:7509 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R7493:7500 aula07_poli <> hd_error prfax
+R7502:7502 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
+R7504:7504 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
+R7506:7506 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
+R7510:7513 aula07_poli <> Some constr
+def 7564:7577 <> test_hd_error2
+R7600:7603 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R7581:7588 aula07_poli <> hd_error prfax
+R7591:7591 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
+R7595:7595 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
+R7599:7599 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
+R7592:7592 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
+R7594:7594 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
+R7596:7596 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
+R7598:7598 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
+R7604:7607 aula07_poli <> Some constr
+R7609:7609 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not
+R7611:7611 aula07_poli <> :::'['_x_';'_'..'_';'_x_']' not

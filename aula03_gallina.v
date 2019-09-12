@@ -1,11 +1,11 @@
-(** * Programação funcional em Coq *)
+(** * Programa\u00e7\u00e3o funcional em Coq *)
 
 (* ############################################### *)
-(** * Instalação *)
+(** * Instala\u00e7\u00e3o *)
 
 (** Passo-a-passo:
   1. Instalar OPAM: gerenciador de pacotes OCaml
-  [passo já realizado pelo helpdesk no G3]
+  [passo j\u00e1 realizado pelo helpdesk no G3]
   Link: http://opam.ocaml.org/doc/Install.html
   a) wget https://raw.github.com/ocaml/opam/master/shell/opam_installer.sh -O - | sh -s /usr/local/bin
 
@@ -13,9 +13,9 @@
   Link: https://coq.inria.fr/opam/www/using.html
   a) abrir o terminal (ctrl + alt + t)
   b) export OPAMROOT=~/opam-coq.8.8.1
-     # diretório de instalação no home do usuário
+     # diret\u00f3rio de instala\u00e7\u00e3o no home do usu\u00e1rio
   c) opam init -n --comp=4.02.3 -j 4
-     # 4 é o número de núcleos de processamento
+     # 4 \u00e9 o n\u00famero de n\u00facleos de processamento
   d) opam repo add coq-released http://coq.inria.fr/opam/released
   e) opam install coq.8.8.1 && opam pin add coq 8.8.1
 
@@ -23,70 +23,70 @@
   Link: https://coq.inria.fr/opam/www/using.html
   a) opam install coqide
   
-  4. Para rodar a IDE, é preciso reexecutar os
+  4. Para rodar a IDE, \u00e9 preciso reexecutar os
   seguintes comandos sempre que abrir um novo
   terminal:
   a) abrir o terminal (ctrl + alt + t)
   b) export OPAMROOT=~/opam-coq.8.8.1
-     # diretório em que instalou Coq
+     # diret\u00f3rio em que instalou Coq
   c) eval `opam config env`
      # configurar ambiente
   d) coqide &
 
-  5. Para testar a instalação, abrir o arquivo
-  01-introducao-exemplo.v e processá-lo até o final
+  5. Para testar a instala\u00e7\u00e3o, abrir o arquivo
+  01-introducao-exemplo.v e process\u00e1-lo at\u00e9 o final
   (ctrl + end). O texto deve ficar todo verde.
 
-  Outra opção de IDE: Emacs + ProofGeneral
+  Outra op\u00e7\u00e3o de IDE: Emacs + ProofGeneral
   Link: https://proofgeneral.github.io/
 
-  Links úteis:
+  Links \u00fateis:
   - https://github.com/coq/coq
   - https://github.com/coq/coq/wiki
   - https://github.com/coq/coq/wiki/The-Coq-FAQ
 *)
 
 (* ############################################### *)
-(** * Prefácio *)
+(** * Pref\u00e1cio *)
 
-(** Material baseado na série Software Foundations
+(** Material baseado na s\u00e9rie Software Foundations
     https://softwarefoundations.cis.upenn.edu/. *)
 
 (** Aspectos centrais deste material:
-    - uso de lógica para definir e provar
-      afirmações precisas sobre programas
+    - uso de l\u00f3gica para definir e provar
+      afirma\u00e7\u00f5es precisas sobre programas
     - uso de um assistente de prova (Coq)
-      para construir argumentos lógicos rigorosos
-    - programação funcional como ligação
-      entre programação e lógica *)
+      para construir argumentos l\u00f3gicos rigorosos
+    - programa\u00e7\u00e3o funcional como liga\u00e7\u00e3o
+      entre programa\u00e7\u00e3o e l\u00f3gica *)
 
-(** Coq: aspectos históricos
+(** Coq: aspectos hist\u00f3ricos
     - Em desenvolvimento deste 1984
-    - Possíveis origens do nome:
-      - Tradição francesa: Caml, Elan, PhoX, etc.
+    - Poss\u00edveis origens do nome:
+      - Tradi\u00e7\u00e3o francesa: Caml, Elan, PhoX, etc.
       - Calculus of Constructions
-      - Símbolo nacional da França
-      - Primeiras três letras de Thierry Coquand *)
+      - S\u00edmbolo nacional da Fran\u00e7a
+      - Primeiras tr\u00eas letras de Thierry Coquand *)
 
-(** Coq: aplicações em CS e matemática:
+(** Coq: aplica\u00e7\u00f5es em CS e matem\u00e1tica:
     - Plataforma para modelar PLs
-      [instruções x86, C, etc.]
+      [instru\u00e7\u00f5es x86, C, etc.]
     - Ambiente para desenvolver HW/SW certificado
       [CompCert, CertiKos, RISC-V, etc.]
-    - Ambiente para programação funcional
+    - Ambiente para programa\u00e7\u00e3o funcional
       [Gallina]
-    - Assistente de prova para lógica de alta ordem
+    - Assistente de prova para l\u00f3gica de alta ordem
       [Primeira prova verificada formalmente
        do Teorema das 4 cores] *)
 
 (* ############################################### *)
-(** * Gallina: introdução *)
+(** * Gallina: introdu\u00e7\u00e3o *)
 
-(** Definindo novo tipo: conjunto de valores possíveis.
-    - [day] é o nome do tipo
-    - a definição [day] é um elemento de [Type]
-    - [:=] usado para preceder a definição
-    - [|] é usado para separar elementos de [day]
+(** Definindo novo tipo: conjunto de valores poss\u00edveis.
+    - [day] \u00e9 o nome do tipo
+    - a defini\u00e7\u00e3o [day] \u00e9 um elemento de [Type]
+    - [:=] usado para preceder a defini\u00e7\u00e3o
+    - [|] \u00e9 usado para separar elementos de [day]
 *)
 
 Inductive day : Type :=
@@ -98,14 +98,14 @@ Inductive day : Type :=
   | saturday  : day
   | sunday    : day.
 
-(** Definindo uma função que opera sobre dias.
-    - [Definition] funções não-recursivas
-    - Tipos não precisam ser explícitos
-    - [:=] precede a definição da função
-    - A definição pode ser feita por casamento
-      de padrão, como também chamada a outras funções
+(** Definindo uma fun\u00e7\u00e3o que opera sobre dias.
+    - [Definition] fun\u00e7\u00f5es n\u00e3o-recursivas
+    - Tipos n\u00e3o precisam ser expl\u00edcitos
+    - [:=] precede a defini\u00e7\u00e3o da fun\u00e7\u00e3o
+    - A defini\u00e7\u00e3o pode ser feita por casamento
+      de padr\u00e3o, como tamb\u00e9m chamada a outras fun\u00e7\u00f5es
     - [=>] representa o retorno quando [d]
-      casa com uma das opções
+      casa com uma das op\u00e7\u00f5es
  *)
 
 Definition next_weekday (d:day) : day :=
@@ -119,13 +119,13 @@ Definition next_weekday (d:day) : day :=
   | sunday    => monday
   end.
 
-(** Validando a função definida:
-    - [Compute]: avalia expressão
-    - [Example]: define afirmação a ser verificada
-      a) dá um nome à afirmação
+(** Validando a fun\u00e7\u00e3o definida:
+    - [Compute]: avalia express\u00e3o
+    - [Example]: define afirma\u00e7\u00e3o a ser verificada
+      a) d\u00e1 um nome \u00e0 afirma\u00e7\u00e3o
       b) permite usar o modo de prova de Coq
-         para verificar que a afirmação
-         é verdadeira (como um teste unitário)
+         para verificar que a afirma\u00e7\u00e3o
+         \u00e9 verdadeira (como um teste unit\u00e1rio)
     - Extrair programa funcional em OCaml ou Haskell
 *)
 
@@ -144,17 +144,17 @@ Proof. simpl. reflexivity. Qed.
     amarelo ou vermelho. *)
 
 (** **** Exercise: (next_sinal) *)
-(** Defina a função [next_sinal] que muda a cor
-    de um sinal para a próxima cor esperada *)
+(** Defina a fun\u00e7\u00e3o [next_sinal] que muda a cor
+    de um sinal para a pr\u00f3xima cor esperada *)
 
 (** **** Exercise: (compute_sinal) *)
-(** Use [Compute] para testar a definição
+(** Use [Compute] para testar a defini\u00e7\u00e3o
     de [next_sinal]. *)
 
 (** **** Exercise: (test_sinal) *)
-(** Use [Example] para testar a definição
+(** Use [Example] para testar a defini\u00e7\u00e3o
     de [next_sinal]. Prove que sua
-    afirmação é verdadeira usando simpl.
+    afirma\u00e7\u00e3o \u00e9 verdadeira usando simpl.
     e reflexivity. *)
 
 Inductive sinal : Type :=
@@ -179,14 +179,14 @@ Proof. simpl. reflexivity. Qed.
 (** ** Booleans *)
 
 (** De forma similar, podemos definir o tipo booleano.
-    - Não confundir: booleano vs. True e False da lógica *)
+    - N\u00e3o confundir: booleano vs. True e False da l\u00f3gica *)
 
 Inductive bool : Type :=
   | true : bool
   | false : bool.
 
-(** Definindo funções sobre booleanos
-    - Observe a sintaxe para vários parâmetros *)
+(** Definindo fun\u00e7\u00f5es sobre booleanos
+    - Observe a sintaxe para v\u00e1rios par\u00e2metros *)
 
 Definition negb (b:bool) : bool :=
   match b with
@@ -206,7 +206,7 @@ Definition orb (b1:bool) (b2:bool) : bool :=
   | false => b2
   end.
 
-(** Teste unitários *)
+(** Teste unit\u00e1rios *)
 
 Example test_orb1:  (orb true  false) = true.
 Proof. simpl. reflexivity.  Qed.
@@ -220,7 +220,7 @@ Proof. simpl. reflexivity.  Qed.
 Example test_orb4:  (orb true  true)  = true.
 Proof. simpl. reflexivity.  Qed.
 
-(** É possível definir uma sintaxe mais familiar
+(** \u00c9 poss\u00edvel definir uma sintaxe mais familiar
     usando [Notation] *)
 
 Notation "x && y" := (andb x y).
@@ -230,8 +230,8 @@ Example test_orb5:  false || false || true = true.
 Proof. simpl. reflexivity. Qed.
 
 (** **** Exercise: (nandb) *)
-(** Defina nandb (usando casamento de padrão e,
-    em seguida, complete os testes unitários. *)
+(** Defina nandb (usando casamento de padr\u00e3o e,
+    em seguida, complete os testes unit\u00e1rios. *)
 
 Definition nandb (b1:bool) (b2:bool) : bool :=
   match b1, b2 with
@@ -257,14 +257,14 @@ Example test_nandb4:
 Proof. simpl. reflexivity.  Qed.
 
 (** **** Exercise: (nandb') *)
-(** Defina nandb' usando as definições [andb] e [negb] *)
+(** Defina nandb' usando as defini\u00e7\u00f5es [andb] e [negb] *)
 
 Definition nandb' (b1:bool) (b2:bool) : bool
-  (* SUBSTITUA COM ":= _sua_definição_ ." *). Admitted.
+  (* SUBSTITUA COM ":= _sua_defini\u00e7\u00e3o_ ." *). Admitted.
 
-(** Nas próximas provas, observe o resultado do
-    simpl. Tente antes desta tática, usar
-    unfold nandb' (que obriga a expansão da definição
+(** Nas pr\u00f3ximas provas, observe o resultado do
+    simpl. Tente antes desta t\u00e1tica, usar
+    unfold nandb' (que obriga a expans\u00e3o da defini\u00e7\u00e3o
     de nandb'). *)
 
 Example test_nandb'1:
@@ -281,12 +281,12 @@ Example test_nandb'4:
 (* COMPLETE AQUI *) Admitted.
 
 (** **** Exercise: (andb3)  *)
-(** Defina a função [andb3]. Esta função deve
+(** Defina a fun\u00e7\u00e3o [andb3]. Esta fun\u00e7\u00e3o deve
     retornar [true] quando todas suas entradas
-    são [true], e [false] caso contrário *)
+    s\u00e3o [true], e [false] caso contr\u00e1rio *)
 
 Definition andb3 (b1:bool) (b2:bool) (b3:bool) : bool
-  (* SUBSTITUA COM ":= _sua_definição_ ." *). Admitted.
+  (* SUBSTITUA COM ":= _sua_defini\u00e7\u00e3o_ ." *). Admitted.
 
 Example test_andb31:
 (andb3 true true true) = true.
@@ -304,34 +304,34 @@ Example test_andb34:
 (* =============================================== *)
 (** ** Function Types *)
 
-(** Toda expressão em Coq tem um tipo. O comando
-    [Check] imprime o tipo de uma expressão. *)
+(** Toda express\u00e3o em Coq tem um tipo. O comando
+    [Check] imprime o tipo de uma express\u00e3o. *)
 
 Check true.
 (* ===> true : bool *)
 Check (negb true).
 (* ===> negb true : bool *)
 
-(** A função [negb] é também o valor de um dado, assim
-    como [true] e [false]. Seu tipo é chamado
+(** A fun\u00e7\u00e3o [negb] \u00e9 tamb\u00e9m o valor de um dado, assim
+    como [true] e [false]. Seu tipo \u00e9 chamado
     _function types_, e escrito usando setas *)
 
 Check negb.
 (* ===> negb : bool -> bool *)
 
-(** [negb] é uma função que dado um [bool],
+(** [negb] \u00e9 uma fun\u00e7\u00e3o que dado um [bool],
     produz um [bool]. *)
 
 Check andb.
 (* ===> andb : bool -> bool -> bool *)
 
-(** [andb] é uma função que a partir de dois [bool],
+(** [andb] \u00e9 uma fun\u00e7\u00e3o que a partir de dois [bool],
     produz um [bool]. *)
 
 (* =============================================== *)
 (** ** Tipos compostos *)
 
-(** Tipos definidos até então: enumerações. Cada opção
+(** Tipos definidos at\u00e9 ent\u00e3o: enumera\u00e7\u00f5es. Cada op\u00e7\u00e3o
     criada a partir de um certo _construtor_. *)
 
 Inductive rgb : Type :=
@@ -339,7 +339,7 @@ Inductive rgb : Type :=
   | green : rgb
   | blue  : rgb.
 
-(** A definição a seguir possui o construtor [primary]
+(** A defini\u00e7\u00e3o a seguir possui o construtor [primary]
     que recebe um [rgb] e produz um [color]. *)
 
 Inductive color : Type :=
@@ -351,7 +351,7 @@ Check black.
 
 Check primary.
 
-(** Definindo funções sobre tipos compostos *)
+(** Definindo fun\u00e7\u00f5es sobre tipos compostos *)
 
 
 Definition monochrome (c : color) : bool :=
@@ -373,41 +373,41 @@ Definition isred (c : color) : bool :=
     efeito de [primary p]. *)
 
 (* =============================================== *)
-(** ** Módulos *)
+(** ** M\u00f3dulos *)
 
-(** Uma das maneiras de estruturar uma especificação
-    em Coq é usar módulos. *)
+(** Uma das maneiras de estruturar uma especifica\u00e7\u00e3o
+    em Coq \u00e9 usar m\u00f3dulos. *)
 
 Module NatPlayground.
 
 (* =============================================== *)
-(** ** Números *)
+(** ** N\u00fameros *)
 
 (** Definindo um tipo usando construtores que recebem
     argumentos do tipo sendo definido. *)
 
-(** Números naturais
-    - O: uma representação do número zero
-    - S _: o sucessor de um número natural *)
+(** N\u00fameros naturais
+    - O: uma representa\u00e7\u00e3o do n\u00famero zero
+    - S _: o sucessor de um n\u00famero natural *)
 
 Inductive nat : Type :=
   | O : nat
   | S : nat -> nat.
 
-(** Por isso que tipos são (potencialmente) indutivos:
-    - [O] é um número natural
-    - [S O] é um número natural
-    - [S (S O)] é um número natural
-    - [S (S false)] não é um número natural *)
+(** Por isso que tipos s\u00e3o (potencialmente) indutivos:
+    - [O] \u00e9 um n\u00famero natural
+    - [S O] \u00e9 um n\u00famero natural
+    - [S (S O)] \u00e9 um n\u00famero natural
+    - [S (S false)] n\u00e3o \u00e9 um n\u00famero natural *)
 
-(** Esta definição é uma representação estrutural
+(** Esta defini\u00e7\u00e3o \u00e9 uma representa\u00e7\u00e3o estrutural
     sem significado. O significado vem do seu uso *)
 
 Inductive nat' : Type :=
   | stop : nat'
   | tick : nat' -> nat'.
 
-(** Exemplo: função [pred] *)
+(** Exemplo: fun\u00e7\u00e3o [pred] *)
 
 Definition pred (n : nat) : nat :=
   match n with
@@ -417,13 +417,13 @@ Definition pred (n : nat) : nat :=
 
 End NatPlayground.
 
-(** Coq possui definições para representar
-    números de forma decimal *)
+(** Coq possui defini\u00e7\u00f5es para representar
+    n\u00fameros de forma decimal *)
 
 Check (S (S (S (S O)))).
 (* ===> 4 : nat *)
 
-(** Definindo a função [minustwo]. Observe
+(** Definindo a fun\u00e7\u00e3o [minustwo]. Observe
     os dois primeiros casos *)
 
 Definition minustwo (n : nat) : nat :=
@@ -439,7 +439,7 @@ Compute (minustwo 4).
 Compute (minustwo 1).
 (* ===> 0 : nat *)
 
-(** Tipos dos construtores e das funções
+(** Tipos dos construtores e das fun\u00e7\u00f5es
     para [nat] *)
 
 Check S.
@@ -447,10 +447,10 @@ Check pred.
 Check minustwo.
 
 (** Apesar de todos serem valores, as duas
-    últimas definições possuem uma noção
+    \u00faltimas defini\u00e7\u00f5es possuem uma no\u00e7\u00e3o
     de computabilidade associada *)
 
-(** Definindo funções recursivas: [Fixpoint]. *)
+(** Definindo fun\u00e7\u00f5es recursivas: [Fixpoint]. *)
 
 Fixpoint evenb (n:nat) : bool :=
   match n with
@@ -459,7 +459,7 @@ Fixpoint evenb (n:nat) : bool :=
   | S (S n') => evenb n'
   end.
 
-(** Definindo [oddb] em função de [evenb] e [negb]. *)
+(** Definindo [oddb] em fun\u00e7\u00e3o de [evenb] e [negb]. *)
 
 Definition oddb (n:nat) : bool := negb (evenb n).
 
@@ -468,8 +468,8 @@ Proof. unfold oddb. simpl. reflexivity.  Qed.
 Example test_oddb2:    oddb 4 = false.
 Proof. simpl. reflexivity.  Qed.
 
-(** Definindo funções recursivas com
-    vários parâmetros *)
+(** Definindo fun\u00e7\u00f5es recursivas com
+    v\u00e1rios par\u00e2metros *)
 
 Module NatPlayground2.
 
@@ -479,24 +479,24 @@ Fixpoint plus (n : nat) (m : nat) : nat :=
   | S n' => S (plus n' m)
   end.
 
-(** Testando a definição *)
+(** Testando a defini\u00e7\u00e3o *)
 Compute (plus 3 2).
 (* ===> 5 : nat *)
 
-(** O passo-a-passo da computação seria: *)
+(** O passo-a-passo da computa\u00e7\u00e3o seria: *)
 
 (*  [plus (S (S (S O))) (S (S O))]
 ==> [S (plus (S (S O)) (S (S O)))]
-      pela segunda clásula do [match]
+      pela segunda cl\u00e1sula do [match]
 ==> [S (S (plus (S O) (S (S O))))]
-      pela segunda clásula do [match]
+      pela segunda cl\u00e1sula do [match]
 ==> [S (S (S (plus O (S (S O)))))]
-      pela segunda clásula do [match]
+      pela segunda cl\u00e1sula do [match]
 ==> [S (S (S (S (S O))))]
-      pela primeira clásula do [match]
+      pela primeira cl\u00e1sula do [match]
 *)
 
-(** Outra notação para vários parâmetros
+(** Outra nota\u00e7\u00e3o para v\u00e1rios par\u00e2metros
     do mesmo tipo *)
 
 Fixpoint mult (n m : nat) : nat :=
@@ -508,7 +508,7 @@ Fixpoint mult (n m : nat) : nat :=
 Example test_mult1: (mult 3 3) = 9.
 Proof. simpl. reflexivity.  Qed.
 
-(** Casamento de padrão múltiplo *)
+(** Casamento de padr\u00e3o m\u00faltiplo *)
 
 Fixpoint minus (n m:nat) : nat :=
   match n, m with
@@ -519,7 +519,7 @@ Fixpoint minus (n m:nat) : nat :=
 
 End NatPlayground2.
 
-(** Definindo exponenciação: [exp] *)
+(** Definindo exponencia\u00e7\u00e3o: [exp] *)
 
 Fixpoint exp (base power : nat) : nat :=
   match power with
@@ -528,13 +528,13 @@ Fixpoint exp (base power : nat) : nat :=
   end.
 
 (** **** Exercise: 1(factorial)  *)
-(** Defina a função fatorial em Coq
+(** Defina a fun\u00e7\u00e3o fatorial em Coq
        factorial(0)  =  1
        factorial(n)  =  n * factorial(n-1)
                         (if n>0) *)
 
 Fixpoint factorial (n:nat) : nat
-  (* SUBSTITUA COM ":= _sua_definição_ ." *). Admitted.
+  (* SUBSTITUA COM ":= _sua_defini\u00e7\u00e3o_ ." *). Admitted.
 
 Example test_factorial1:
 (factorial 3) = 6.
@@ -544,10 +544,10 @@ Example test_factorial2:
 (factorial 5) = (mult 10 12).
 (* COMPLETE AQUI *) Admitted.
 
-(** As próximas definições definem uma sintaxe
-    para adição, subtração e multiplicação
-    - precedência: [at level n], onde n 0..100
-      menor valor indica maior precedência      
+(** As pr\u00f3ximas defini\u00e7\u00f5es definem uma sintaxe
+    para adi\u00e7\u00e3o, subtra\u00e7\u00e3o e multiplica\u00e7\u00e3o
+    - preced\u00eancia: [at level n], onde n 0..100
+      menor valor indica maior preced\u00eancia      
     - associatividade: [left], [right] ou
                        [no] [associativity]
  *)
@@ -566,7 +566,7 @@ Notation "x * y" := (mult x y)
 
 Check ((0 + 1) + 1).
 
-(** Definindo se dois números são iguais: [beq_nat] *)
+(** Definindo se dois n\u00fameros s\u00e3o iguais: [beq_nat] *)
 
 Fixpoint beq_nat (n m : nat) : bool :=
   match n with
@@ -602,13 +602,13 @@ Example test_leb3: (leb 4 2) = false.
 Proof. simpl. reflexivity.  Qed.
 
 (** **** Exercise: (blt_nat)  *)
-(** A função [blt_nat] testa se um número é
-    menor do que outro. Observe que a próxima
-    definição não é recursiva. É preciso definir
-    [blt_nat] a partir de definições passadas *)
+(** A fun\u00e7\u00e3o [blt_nat] testa se um n\u00famero \u00e9
+    menor do que outro. Observe que a pr\u00f3xima
+    defini\u00e7\u00e3o n\u00e3o \u00e9 recursiva. \u00c9 preciso definir
+    [blt_nat] a partir de defini\u00e7\u00f5es passadas *)
 
 Definition blt_nat (n m : nat) : bool
-  (* SUBSTITUA COM ":= _sua_definição_ ." *). Admitted.
+  (* SUBSTITUA COM ":= _sua_defini\u00e7\u00e3o_ ." *). Admitted.
 
 Example test_blt_nat1:
 (blt_nat 2 2) = false.
@@ -626,8 +626,8 @@ Example test_blt_nat3:
 (** * Leitura sugerida *)
 
 (** Software Foundations: volume 1
-  - Prefácio
+  - Pref\u00e1cio
   https://softwarefoundations.cis.upenn.edu/lf-current/Preface.html
-  - Aspectos básicos (até o final de "Data and Functions")
+  - Aspectos b\u00e1sicos (at\u00e9 o final de "Data and Functions")
   https://softwarefoundations.cis.upenn.edu/lf-current/Basics.html
 *)

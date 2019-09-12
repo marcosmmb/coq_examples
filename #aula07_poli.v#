@@ -42,7 +42,9 @@ Fixpoint repeat (X : Type) (x : X) (count : nat) : list X :=
 Example test_repeat1 :
   repeat nat 4 2 =
   cons nat 4 (cons nat 4 (nil nat)).
-Proof. reflexivity.  Qed.
+Proof. reflexivity.  Qed.Fixpoint ident (_ : _) {struct _} : _ :=
+.
+
 
 Example test_repeat2 :
   repeat bool false 1 =
